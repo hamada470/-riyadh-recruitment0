@@ -3,46 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مكتب استقدام عمالة منزلية</title>
+    <title>مكتب استقدام عمالة - الرياض</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: #f4f4f4; margin: 0; padding-bottom: 80px; text-align: center; }
-        header { background: #1e3a8a; color: white; padding: 20px; }
+        :root { --primary: #1e3a8a; --whatsapp: #25d366; --call: #0284c7; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: #f4f7f6; color: #333; line-height: 1.6; }
         
-        /* البطاقات */
-        .container { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; padding: 20px; }
-        .card { background: white; width: 160px; padding: 10px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .card img { width: 100%; height: 160px; object-fit: cover; border-radius: 8px; }
-        .card h4 { margin: 10px 0 5px; font-size: 14px; }
-        .card p { font-size: 12px; color: #666; margin: 0 0 10px; }
+        /* حركة الدخول */
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        .animate-card { animation: fadeInUp 0.8s ease forwards; }
+
+        header { background: #fff; padding: 30px; text-align: center; border-bottom: 3px solid var(--primary); }
+        h1 { color: var(--primary); }
+
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; padding: 20px; max-width: 1000px; margin: auto; }
         
+        .card { background: #fff; padding: 15px; border-radius: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); transition: transform 0.3s; }
+        .card:hover { transform: scale(1.02); }
+        .card img { width: 100%; height: 250px; object-fit: cover; border-radius: 15px; margin-bottom: 15px; }
+
         /* الأزرار العائمة */
-        .float-nav { position: fixed; bottom: 0; width: 100%; display: flex; }
-        .float-nav a { flex: 1; padding: 15px; color: white; text-decoration: none; font-weight: bold; text-align: center; }
-        .wa { background: #25d366; }
-        .call { background: #0284c7; }
+        .floating-container { position: fixed; bottom: 20px; left: 20px; right: 20px; display: flex; gap: 10px; z-index: 999; }
+        .btn-float { flex: 1; padding: 15px; border-radius: 50px; color: white; text-align: center; text-decoration: none; font-weight: bold; box-shadow: 0 4px 15px rgba(0,0,0,0.2); backdrop-filter: blur(5px); }
+        .whatsapp { background: var(--whatsapp); }
+        .call { background: var(--call); }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>مكتب استقدام العمالة</h1>
-</header>
+    <header>
+        <h1>خدمات استقدام العمالة المنزلية</h1>
+        <p>نخبة من العمالة المدربة في الرياض</p>
+    </header>
 
-<div class="container">
-    <!-- يمكنك تكرار هذا الجزء لكل عاملة -->
-    <div class="card">
-        <img src="رابط_صورتك_هنا" alt="عاملة">
-        <h4>الاسم</h4>
-        <p>المرجع: 12345</p>
+    <div class="gallery">
+        <!-- كرر هذا الكود لكل صورة -->
+        <div class="card animate-card">
+            <img src="https://via.placeholder.com/400x400" alt="عاملة">
+            <h3>اسم العاملة</h3>
+            <p>الرقم المرجعي: 001</p>
+        </div>
+        <div class="card animate-card">
+            <img src="https://via.placeholder.com/400x400" alt="عاملة">
+            <h3>اسم العاملة</h3>
+            <p>الرقم المرجعي: 002</p>
+        </div>
+        <div class="card animate-card">
+            <img src="https://via.placeholder.com/400x400" alt="عاملة">
+            <h3>اسم العاملة</h3>
+            <p>الرقم المرجعي: 003</p>
+        </div>
+        <div class="card animate-card">
+            <img src="https://via.placeholder.com/400x400" alt="عاملة">
+            <h3>اسم العاملة</h3>
+            <p>الرقم المرجعي: 004</p>
+        </div>
+        <div class="card animate-card">
+            <img src="https://via.placeholder.com/400x400" alt="عاملة">
+            <h3>اسم العاملة</h3>
+            <p>الرقم المرجعي: 005</p>
+        </div>
     </div>
-    <!-- انتهى تكرار العاملة -->
-</div>
 
-<!-- الأزرار العائمة -->
-<div class="float-nav">
-    <a href="https://wa.me/966558900935" class="wa">واتساب 💬</a>
-    <a href="tel:+966558900935" class="call">اتصال 📞</a>
-</div>
+    <!-- الأزرار العائمة -->
+    <div class="floating-container">
+        <a href="https://wa.me/966558900935" class="btn-float whatsapp">واتساب 💬</a>
+        <a href="tel:+966558900935" class="btn-float call">اتصال 📞</a>
+    </div>
 
 </body>
 </html>
