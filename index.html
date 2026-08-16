@@ -3,348 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مكتب استقدام عمالة منزلية بالرياض | الفليبين وإثيوبيا</title>
-    
-    <meta name="description" content="أفضل مكتب استقدام عمالة منزلية بالرياض. نوفر عاملات منزلية ورعاة كبار السن من الفليبين وإثيوبيا بكفاءة عالية، سرعة إنجاز، وضمان شامل.">
-    <meta name="keywords" content="استقدام عمالة منزلية الرياض, مكتب استقدام الرياض, عاملات منزلية من الفليبين, استقدام خادمة من إثيوبيا, خادمات فلبينيات الرياض, استقدام مساند">
-    <meta name="author" content="مكتب استقدام بالرياض">
-
+    <title>مكتب استقدام عمالة منزلية بالرياض</title>
     <style>
-        :root {
-            --primary-color: #1e3a8a;
-            --secondary-color: #0284c7;
-            --accent-color: #25d366;
-            --text-dark: #0f172a;
-            --bg-light: #f8fafc;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-        }
-
-        body {
-            background-color: var(--bg-light);
-            color: var(--text-dark);
-            line-height: 1.6;
-        }
-
-        header {
-            background: linear-gradient(rgba(30, 58, 138, 0.85), rgba(2, 132, 199, 0.85)), url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+        :root { --primary-color: #1e3a8a; --accent-color: #25d366; --call-color: #0284c7; }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: sans-serif; }
+        body { background-color: #f8fafc; color: #333; line-height: 1.6; }
+        
+        /* تصميم الأزرار العائمة */
+        .float-btn {
+            position: fixed;
+            bottom: 20px;
+            padding: 15px 20px;
+            border-radius: 50px;
             color: white;
-            padding: 70px 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 2.2rem;
-            margin-bottom: 15px;
-        }
-
-        header p {
-            font-size: 1.15rem;
-            max-width: 650px;
-            margin: 0 auto 25px;
-            opacity: 0.95;
-        }
-
-        .cta-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 12px 25px;
-            border-radius: 30px;
-            text-decoration: none;
             font-weight: bold;
-            font-size: 1rem;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        .btn-whatsapp {
-            background-color: var(--accent-color);
-            color: white;
-        }
-
-        .btn-call {
-            background-color: white;
-            color: var(--primary-color);
-        }
-
-        .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 1.8rem;
-            color: var(--primary-color);
-            margin-bottom: 30px;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-            margin-bottom: 50px;
-        }
-
-        .card {
-            background: white;
-            padding: 15px;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            z-index: 1000;
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            align-items: center;
+            gap: 8px;
         }
+        .whatsapp-float { right: 20px; background-color: var(--accent-color); }
+        .call-float { left: 20px; background-color: var(--call-color); }
 
-        .card img {
-            width: 100%;
-            height: 320px;
-            object-fit: cover;
-            border-radius: 8px;
-            margin-bottom: 12px;
-        }
-
-        .card-details {
-            margin-bottom: 15px;
-        }
-
-        .card-details h3 {
-            font-size: 1.2rem;
-            color: var(--primary-color);
-            margin-bottom: 5px;
-        }
-
-        .card-details p {
-            font-size: 0.9rem;
-            color: #475569;
-            margin-bottom: 3px;
-        }
-
-        .features {
-            background: #fff;
-            padding: 30px;
-            border-radius: 12px;
-            margin-bottom: 50px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            text-align: center;
-        }
-
-        .feature-item {
-            padding: 15px;
-        }
-
-        .feature-item h4 {
-            color: var(--secondary-color);
-            margin-bottom: 8px;
-        }
-
-        footer {
-            background: var(--primary-color);
-            color: white;
-            padding: 30px 20px;
-            text-align: center;
-        }
-
-        footer p {
-            margin-bottom: 8px;
-            opacity: 0.9;
-        }
+        /* تنسيق البطاقات */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 20px; }
+        .card { background: white; padding: 15px; border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .card img { width: 100%; height: 300px; object-fit: cover; border-radius: 10px; margin-bottom: 10px; }
+        .btn-card { display: block; background: var(--accent-color); color: white; text-align: center; padding: 10px; border-radius: 5px; text-decoration: none; margin-top: 10px; font-weight: bold; }
+        h1, .section-title { text-align: center; color: var(--primary-color); padding: 20px; }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>مكتب استقدام عمالة منزلية بالرياض</h1>
-        <p>نوفر لكم أفضل العاملات المنزلية من الفليبين وإثيوبيا بكفاءة عالية وضمان شامل لجميع الخدمات</p>
-        <div class="cta-buttons">
-            <a href="https://wa.me/966558900935" class="btn btn-whatsapp" target="_blank">تواصل عبر الواتساب</a>
-            <a href="tel:+966558900935" class="btn btn-call">اتصل بنا مباشرة</a>
+    <h1>مكتب استقدام عمالة منزلية بالرياض</h1>
+
+    <!-- الأزرار العائمة -->
+    <a href="https://wa.me/966558900935" class="float-btn whatsapp-float" target="_blank">واتساب 💬</a>
+    <a href="tel:+966558900935" class="float-btn call-float">اتصل الآن 📞</a>
+
+    <div class="grid">
+        <!-- عاملة 1 -->
+        <div class="card">
+            <img src="1000008551.jpg" alt="عاملة">
+            <h3>Alma Tumapon</h3>
+            <p>الرقم المرجعي: ID-260809</p>
+            <a href="https://wa.me/966558900935?text=أرغب%20في%20استقدام%20العاملة:%20ID-260809" class="btn-card">طلب العاملة</a>
         </div>
-    </header>
-
-    <div class="container">
-
-        <section class="features">
-            <h2 class="section-title">لماذا تختار خدماتنا؟</h2>
-            <div class="features-grid">
-                <div class="feature-item">
-                    <h4>اختيار دقيق</h4>
-                    <p>اختيار الكفاءات بناءً على الخبرة والتدريب العالي.</p>
-                </div>
-                <div class="feature-item">
-                    <h4>سرعة الإنجاز</h4>
-                    <p>متابعة وتخليص كافة الإجراءات بأسرع وقت ممكن.</p>
-                </div>
-                <div class="feature-item">
-                    <h4>ضمان شامل</h4>
-                    <p>ضمان كامل على العمالة حسب الأنظمة واللوائح الرسمية.</p>
-                </div>
-            </div>
-        </section>
-
-        <h2 class="section-title">العاملات المتاحة للاستقدام الفوري</h2>
-
-        <div class="grid">
-
-            <!-- عاملة 1 -->
-            <div class="card">
-                <img src="1000008551.jpg" alt="Alma Tumapon Dahil-Dahil">
-                <div class="card-details">
-                    <h3>Alma Tumapon Dahil-Dahil</h3>
-                    <p><strong>الرقم المرجعي:</strong> ID-260809</p>
-                    <p><strong>الجنسية:</strong> الفليبين | <strong>الديانة:</strong> غير مسلمة</p>
-                    <p><strong>العمر:</strong> 37 سنة | <strong>الراتب:</strong> 1500 ريال</p>
-                    <p><strong>الخبرة:</strong> لم يسبق لها العمل (First Timer)</p>
-                </div>
-                <a href="https://wa.me/966558900935?text=أرغب%20في%20استقدام%20العاملة:%20Alma%20Tumapon%20Dahil-Dahil%20(ID-260809)" class="btn btn-whatsapp" style="text-align:center; font-size: 0.9rem;" target="_blank">طلب العاملة عبر واتساب</a>
-            </div>
-
-            <!-- عاملة 2 -->
-            <div class="card">
-                <img src="1000008549.jpg" alt="Evelyn Galema Ybo">
-                <div class="card-details">
-                    <h3>Evelyn Galema Ybo</h3>
-                    <p><strong>الرقم المرجعي:</strong> CONF-TRO-000269</p>
-                    <p><strong>الجنسية:</strong> الفليبين | <strong>الديانة:</strong> غير مسلمة</p>
-                    <p><strong>العمر:</strong> 39 سنة | <strong>الراتب:</strong> 1500 ريال</p>
-                    <p><strong>الخبرة:</strong> سنتين في الكويت</p>
-                </div>
-                <a href="https://wa.me/966558900935?text=أرغب%20في%20استقدام%20العاملة:%20Evelyn%20Galema%20Ybo%20(CONF-TRO-000269)" class="btn btn-whatsapp" style="text-align:center; font-size: 0.9rem;" target="_blank">طلب العاملة عبر واتساب</a>
-            </div>
-
-            <!-- عاملة 3 -->
-            <div class="card">
-                <img src="1000008545.jpg" alt="Princess Iris Regalo Cosme">
-                <div class="card-details">
-                    <h3>Princess Iris Regalo Cosme</h3>
-                    <p><strong>الرقم المرجعي:</strong> CONF-TRO-000280</p>
-                    <p><strong>الجنسية:</strong> الفليبين | <strong>الديانة:</strong> غير مسلمة</p>
-                    <p><strong>العمر:</strong> 28 سنة | <strong>الراتب:</strong> 1500 ريال</p>
-                    <p><strong>الخبرة:</strong> سنة في عُمان</p>
-                </div>
-                <a href="https://wa.me/966558900935?text=أرغب%20في%20استقدام%20العاملة:%20Princess%20Iris%20Regalo%20Cosme%20(CONF-TRO-000280)" class="btn btn-whatsapp" style="text-align:center; font-size: 0.9rem;" target="_blank">طلب العاملة عبر واتساب</a>
-            </div>
-
-            <!-- عاملة 4 -->
-            <div class="card">
-                <img src="1000008541.jpg" alt="Lieann Sarcena Castillon">
-                <div class="card-details">
-                    <h3>Lieann Sarcena Castillon</h3>
-                    <p><strong>الرقم المرجعي:</strong> CONF-TRO-000275</p>
-                    <p><strong>الجنسية:</strong> الفليبين | <strong>الديانة:</strong> غير مسلمة</p>
-                    <p><strong>العمر:</strong> 34 سنة | <strong>الراتب:</strong> 1500 ريال</p>
-                    <p><strong>الخبرة:</strong> لم يسبق لها العمل (First Timer)</p>
-                </div>
-                <a href="https://wa.me/966558900935?text=أرغب%20في%20استقدام%20العاملة:%20Lieann%20Sarcena%20Castillon%20(CONF-TRO-000275)" class="btn btn-whatsapp" style="text-align:center; font-size: 0.9rem;" target="_blank">طلب العاملة عبر واتساب</a>
-            </div>
-
-            <!-- عاملة 5 -->
-            <div class="card">
-                <img src="1000008543.jpg" alt="Jevs Ashly Kate Ambagan Matienzo">
-                <div class="card-details">
-                    <h3>Jevs Ashly Kate Matienzo</h3>
-                    <p><strong>الرقم المرجعي:</strong> CONF-TRO-000273</p>
-                    <p><strong>الجنسية:</strong> الفليبين | <strong>الديانة:</strong> غير مسلمة</p>
-                    <p><strong>العمر:</strong> 29 سنة | <strong>الراتب:</strong> 1500 ريال</p>
-                    <p><strong>الخبرة:</strong> لم يسبق لها العمل (First Timer)</p>
-                </div>
-                <a href="https://wa.me/966558900935?text=أرغب%20في%20استقدام%20العاملة:%20Jevs%20Ashly%20Kate%20Matienzo%20(CONF-TRO-000273)" class="btn btn-whatsapp" style="text-align:center; font-size: 0.9rem;" target="_blank">طلب العاملة عبر واتساب</a>
-            </div>
-
-            <!-- عاملة 6 -->
-            <div class="card">
-                <img src="1000008547.jpg" alt="Angela Enero Zabanal">
-                <div class="card-details">
-                    <h3>Angela Enero Zabanal</h3>
-                    <p><strong>الرقم المرجعي:</strong> CONF-TRO-000271</p>
-                    <p><strong>الجنسية:</strong> الفليبين | <strong>الديانة:</strong> غير مسلمة</p>
-                    <p><strong>العمر:</strong> 28 سنة | <strong>الراتب:</strong> 1500 ريال</p>
-                    <p><strong>الخبرة:</strong> سنتين في السعودية</p>
-                </div>
-                <a href="https://wa.me/966558900935?text=أرغب%20في%20استقدام%20العاملة:%20Angela%20Enero%20Zabanal%20(CONF-TRO-000271)" class="btn btn-whatsapp" style="text-align:center; font-size: 0.9rem;" target="_blank">طلب العاملة عبر واتساب</a>
-            </div>
-
-            <!-- عاملة 7 -->
-            <div class="card">
-                <img src="1000008539.jpg" alt="Jenifer Nala Mendoza">
-                <div class="card-details">
-                    <h3>Jenifer Nala Mendoza</h3>
-                    <p><strong>الرقم المرجعي:</strong> CONF-TRO-000277</p>
-                    <p><strong>الجنسية:</strong> الفليبين | <strong>الديانة:</strong> غير مسلمة</p>
-                    <p><strong>العمر:</strong> 35 سنة | <strong>الراتب:</strong> 1500 ريال</p>
-                    <p><strong>الخبرة:</strong> لم يسبق لها العمل (First Timer)</p>
-                </div>
-                <a href="https://wa.me/966558900935?text=أرغب%20في%20استقدام%20العاملة:%20Jenifer%20Nala%20Mendoza%20(CONF-TRO-000277)" class="btn btn-whatsapp" style="text-align:center; font-size: 0.9rem;" target="_blank">طلب العاملة عبر واتساب</a>
-            </div>
-
-            <!-- عاملة 8 -->
-            <div class="card">
-                <img src="1000008537.jpg" alt="Rose-Ann Silva Umangay">
-                <div class="card-details">
-                    <h3>Rose-Ann Silva Umangay</h3>
-                    <p><strong>الرقم المرجعي:</strong> ID-260719</p>
-                    <p><strong>الجنسية:</strong> الفليبين | <strong>الديانة:</strong> غير مسلمة</p>
-                    <p><strong>العمر:</strong> 41 سنة | <strong>الراتب:</strong> 1500 ريال</p>
-                    <p><strong>الخبرة:</strong> لم يسبق لها العمل (First Timer)</p>
-                </div>
-                <a href="https://wa.me/966558900935?text=أرغب%20في%20استقدام%20العاملة:%20Rose-Ann%20Silva%20Umangay%20(ID-260719)" class="btn btn-whatsapp" style="text-align:center; font-size: 0.9rem;" target="_blank">طلب العاملة عبر واتساب</a>
-            </div>
-
-            <!-- عاملة 9 -->
-            <div class="card">
-                <img src="1000008535.jpg" alt="Honey Jane Bernardino Luchica">
-                <div class="card-details">
-                    <h3>Honey Jane Bernardino Luchica</h3>
-                    <p><strong>الرقم المرجعي:</strong> ID-260729</p>
-                    <p><strong>الجنسية:</strong> الفليبين | <strong>الديانة:</strong> غير مسلمة</p>
-                    <p><strong>العمر:</strong> 34 سنة | <strong>الراتب:</strong> 1500 ريال</p>
-                    <p><strong>الخبرة:</strong> لم يسبق لها العمل (First Timer)</p>
-                </div>
-                <a href="https://wa.me/966558900935?text=أرغب%20في%20استقدام%20العاملة:%20Honey%20Jane%20Bernardino%20Luchica%20(ID-260729)" class="btn btn-whatsapp" style="text-align:center; font-size: 0.9rem;" target="_blank">طلب العاملة عبر واتساب</a>
-            </div>
-
-            <!-- عاملة 10 -->
-            <div class="card">
-                <img src="1000008531.jpg" alt="Marhada Anjurahman Mallaji">
-                <div class="card-details">
-                    <h3>Marhada Anjurahman Mallaji</h3>
-                    <p><strong>الرقم المرجعي:</strong> ID-260815</p>
-                    <p><strong>الجنسية:</strong> الفليبين | <strong>الديانة:</strong> مسلمة</p>
-                    <p><strong>العمر:</strong> 27 سنة | <strong>الراتب:</strong> 1500 ريال</p>
-                    <p><strong>الخبرة:</strong> 2.7 سنة في الطائف (السعودية)</p>
-                </div>
-                <a href="https://wa.me/966558900935?text=أرغب%20في%20استقدام%20العاملة:%20Marhada%20Anjurahman%20Mallaji%20(ID-260815)" class="btn btn-whatsapp" style="text-align:center; font-size: 0.9rem;" target="_blank">طلب العاملة عبر واتساب</a>
-            </div>
-
+        <!-- عاملة 2 -->
+        <div class="card">
+            <img src="1000008549.jpg" alt="عاملة">
+            <h3>Evelyn Galema</h3>
+            <p>الرقم المرجعي: CONF-TRO-000269</p>
+            <a href="https://wa.me/966558900935?text=أرغب%20في%20استقدام%20العاملة:%20CONF-TRO-000269" class="btn-card">طلب العاملة</a>
+        </div>
+        <!-- عاملة 3 -->
+        <div class="card">
+            <img src="1000008545.jpg" alt="عاملة">
+            <h3>Princess Iris</h3>
+            <p>الرقم المرجعي: CONF-TRO-000280</p>
+            <a href="https://wa.me/966558900935?text=أرغب%20في%20استقدام%20العاملة:%20CONF-TRO-000280" class="btn-card">طلب العاملة</a>
+        </div>
+        <!-- عاملة 4 -->
+        <div class="card">
+            <img src="1000008541.jpg" alt="عاملة">
+            <h3>Lieann Sarcena</h3>
+            <p>الرقم المرجعي: CONF-TRO-000275</p>
+            <a href="https://wa.me/966558900935?text=أرغب%20في%20استقدام%20العاملة:%20CONF-TRO-000275" class="btn-card">طلب العاملة</a>
+        </div>
+        <!-- عاملة 5 -->
+        <div class="card">
+            <img src="1000008543.jpg" alt="عاملة">
+            <h3>Jevs Ashly</h3>
+            <p>الرقم المرجعي: CONF-TRO-000273</p>
+            <a href="https://wa.me/966558900935?text=أرغب%20في%20استقدام%20العاملة:%20CONF-TRO-000273" class="btn-card">طلب العاملة</a>
+        </div>
+        <!-- عاملة 6 -->
+        <div class="card">
+            <img src="1000008547.jpg" alt="عاملة">
+            <h3>Angela Enero</h3>
+            <p>الرقم المرجعي: CONF-TRO-000271</p>
+            <a href="https://wa.me/966558900935?text=أرغب%20في%20استقدام%20العاملة:%20CONF-TRO-000271" class="btn-card">طلب العاملة</a>
+        </div>
+        <!-- عاملة 7 -->
+        <div class="card">
+            <img src="1000008539.jpg" alt="عاملة">
+            <h3>Jenifer Nala</h3>
+            <p>الرقم المرجعي: CONF-TRO-000277</p>
+            <a href="https://wa.me/966558900935?text=أرغب%20في%20استقدام%20العاملة:%20CONF-TRO-000277" class="btn-card">طلب العاملة</a>
+        </div>
+        <!-- عاملة 8 -->
+        <div class="card">
+            <img src="1000008537.jpg" alt="عاملة">
+            <h3>Rose-Ann Silva</h3>
+            <p>الرقم المرجعي: ID-260719</p>
+            <a href="https://wa.me/966558900935?text=أرغب%20في%20استقدام%20العاملة:%20ID-260719" class="btn-card">طلب العاملة</a>
+        </div>
+        <!-- عاملة 9 -->
+        <div class="card">
+            <img src="1000008535.jpg" alt="عاملة">
+            <h3>Honey Jane</h3>
+            <p>الرقم المرجعي: ID-260729</p>
+            <a href="https://wa.me/966558900935?text=أرغب%20في%20استقدام%20العاملة:%20ID-260729" class="btn-card">طلب العاملة</a>
+        </div>
+        <!-- عاملة 10 -->
+        <div class="card">
+            <img src="1000008531.jpg" alt="عاملة">
+            <h3>Marhada Mallaji</h3>
+            <p>الرقم المرجعي: ID-260815</p>
+            <a href="https://wa.me/966558900935?text=أرغب%20في%20استقدام%20العاملة:%20ID-260815" class="btn-card">طلب العاملة</a>
         </div>
     </div>
-
-    <footer>
-        <p>للتواصل والاستفسار المباشر: 0558900935</p>
-        <p>جميع الحقوق محفوظة &copy; 2026 - مكتب استقدام عمالة منزلية</p>
-    </footer>
 
 </body>
 </html>
