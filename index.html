@@ -3,128 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مكتب استقدام عمالة منزلية بالرياض</title>
+    <title>مكتب استقدام عمالة منزلية</title>
     <style>
-        :root { --primary-color: #1e3a8a; --accent-color: #25d366; --call-color: #0284c7; }
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: sans-serif; }
-        body { background-color: #f8fafc; color: #333; line-height: 1.6; }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: #f4f4f4; margin: 0; padding-bottom: 80px; text-align: center; }
+        header { background: #1e3a8a; color: white; padding: 20px; }
         
-        /* تصميم الأزرار العائمة */
-        .float-btn {
-            position: fixed;
-            bottom: 20px;
-            padding: 15px 20px;
-            border-radius: 50px;
-            color: white;
-            font-weight: bold;
-            text-decoration: none;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-            z-index: 1000;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .whatsapp-float { right: 20px; background-color: var(--accent-color); }
-        .call-float { left: 20px; background-color: var(--call-color); }
-
-        /* تنسيق البطاقات */
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 20px; }
-        .card { background: white; padding: 15px; border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        .card img { width: 100%; height: 300px; object-fit: cover; border-radius: 10px; margin-bottom: 10px; }
-        .btn-card { display: block; background: var(--accent-color); color: white; text-align: center; padding: 10px; border-radius: 5px; text-decoration: none; margin-top: 10px; font-weight: bold; }
-        h1, .section-title { text-align: center; color: var(--primary-color); padding: 20px; }
+        /* البطاقات */
+        .container { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; padding: 20px; }
+        .card { background: white; width: 160px; padding: 10px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .card img { width: 100%; height: 160px; object-fit: cover; border-radius: 8px; }
+        .card h4 { margin: 10px 0 5px; font-size: 14px; }
+        .card p { font-size: 12px; color: #666; margin: 0 0 10px; }
+        
+        /* الأزرار العائمة */
+        .float-nav { position: fixed; bottom: 0; width: 100%; display: flex; }
+        .float-nav a { flex: 1; padding: 15px; color: white; text-decoration: none; font-weight: bold; text-align: center; }
+        .wa { background: #25d366; }
+        .call { background: #0284c7; }
     </style>
 </head>
 <body>
 
-    <h1>مكتب استقدام عمالة منزلية بالرياض</h1>
+<header>
+    <h1>مكتب استقدام العمالة</h1>
+</header>
 
-    <!-- الأزرار العائمة -->
-    <a href="https://wa.me/966558900935" class="float-btn whatsapp-float" target="_blank">واتساب 💬</a>
-    <a href="tel:+966558900935" class="float-btn call-float">اتصل الآن 📞</a>
-
-    <div class="grid">
-        <!-- عاملة 1 -->
-        <div class="card">
-            <!-- استبدل الرابط أدناه برابط الصورة المباشر من موقع الاستضافة -->
-            <img src="ضع_رابط_الصورة_المباشر_هنا_1" alt="Alma Tumapon">
-            <h3>Alma Tumapon</h3>
-            <p>الرقم المرجعي: ID-260809</p>
-            <a href="https://wa.me/966558900935?text=أرغب%20في%20استقدام%20العاملة:%20ID-260809" class="btn-card">طلب العاملة</a>
-        </div>
-
-        <!-- عاملة 2 -->
-        <div class="card">
-            <img src="ضع_رابط_الصورة_المباشر_هنا_2" alt="Evelyn Galema">
-            <h3>Evelyn Galema</h3>
-            <p>الرقم المرجعي: CONF-TRO-000269</p>
-            <a href="https://wa.me/966558900935?text=أرغب%20في%20استقدام%20العاملة:%20CONF-TRO-000269" class="btn-card">طلب العاملة</a>
-        </div>
-
-        <!-- عاملة 3 -->
-        <div class="card">
-            <img src="ضع_رابط_الصورة_المباشر_هنا_3" alt="Princess Iris">
-            <h3>Princess Iris</h3>
-            <p>الرقم المرجعي: CONF-TRO-000280</p>
-            <a href="https://wa.me/966558900935?text=أرغب%20في%20استقدام%20العاملة:%20CONF-TRO-000280" class="btn-card">طلب العاملة</a>
-        </div>
-
-        <!-- عاملة 4 -->
-        <div class="card">
-            <img src="ضع_رابط_الصورة_المباشر_هنا_4" alt="Lieann Sarcena">
-            <h3>Lieann Sarcena</h3>
-            <p>الرقم المرجعي: CONF-TRO-000275</p>
-            <a href="https://wa.me/966558900935?text=أرغب%20في%20استقدام%20العاملة:%20CONF-TRO-000275" class="btn-card">طلب العاملة</a>
-        </div>
-
-        <!-- عاملة 5 -->
-        <div class="card">
-            <img src="ضع_رابط_الصورة_المباشر_هنا_5" alt="Jevs Ashly">
-            <h3>Jevs Ashly</h3>
-            <p>الرقم المرجعي: CONF-TRO-000273</p>
-            <a href="https://wa.me/966558900935?text=أرغب%20في%20استقدام%20العاملة:%20CONF-TRO-000273" class="btn-card">طلب العاملة</a>
-        </div>
-
-        <!-- عاملة 6 -->
-        <div class="card">
-            <img src="ضع_رابط_الصورة_المباشر_هنا_6" alt="Angela Enero">
-            <h3>Angela Enero</h3>
-            <p>الرقم المرجعي: CONF-TRO-000271</p>
-            <a href="https://wa.me/966558900935?text=أرغب%20في%20استقدام%20العاملة:%20CONF-TRO-000271" class="btn-card">طلب العاملة</a>
-        </div>
-
-        <!-- عاملة 7 -->
-        <div class="card">
-            <img src="ضع_رابط_الصورة_المباشر_هنا_7" alt="Jenifer Nala">
-            <h3>Jenifer Nala</h3>
-            <p>الرقم المرجعي: CONF-TRO-000277</p>
-            <a href="https://wa.me/966558900935?text=أرغب%20في%20استقدام%20العاملة:%20CONF-TRO-000277" class="btn-card">طلب العاملة</a>
-        </div>
-
-        <!-- عاملة 8 -->
-        <div class="card">
-            <img src="ضع_رابط_الصورة_المباشر_هنا_8" alt="Rose-Ann Silva">
-            <h3>Rose-Ann Silva</h3>
-            <p>الرقم المرجعي: ID-260719</p>
-            <a href="https://wa.me/966558900935?text=أرغب%20في%20استقدام%20العاملة:%20ID-260719" class="btn-card">طلب العاملة</a>
-        </div>
-
-        <!-- عاملة 9 -->
-        <div class="card">
-            <img src="ضع_رابط_الصورة_المباشر_هنا_9" alt="Honey Jane">
-            <h3>Honey Jane</h3>
-            <p>الرقم المرجعي: ID-260729</p>
-            <a href="https://wa.me/966558900935?text=أرغب%20في%20استقدام%20العاملة:%20ID-260729" class="btn-card">طلب العاملة</a>
-        </div>
-
-        <!-- عاملة 10 -->
-        <div class="card">
-            <img src="ضع_رابط_الصورة_المباشر_هنا_10" alt="Marhada Mallaji">
-            <h3>Marhada Mallaji</h3>
-            <p>الرقم المرجعي: ID-260815</p>
-            <a href="https://wa.me/966558900935?text=أرغب%20في%20استقدام%20العاملة:%20ID-260815" class="btn-card">طلب العاملة</a>
-        </div>
+<div class="container">
+    <!-- يمكنك تكرار هذا الجزء لكل عاملة -->
+    <div class="card">
+        <img src="رابط_صورتك_هنا" alt="عاملة">
+        <h4>الاسم</h4>
+        <p>المرجع: 12345</p>
     </div>
+    <!-- انتهى تكرار العاملة -->
+</div>
+
+<!-- الأزرار العائمة -->
+<div class="float-nav">
+    <a href="https://wa.me/966558900935" class="wa">واتساب 💬</a>
+    <a href="tel:+966558900935" class="call">اتصال 📞</a>
+</div>
 
 </body>
 </html>
