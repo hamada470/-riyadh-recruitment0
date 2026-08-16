@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مكتب استقدام عمالة منزلية بالرياض | عمالة فلبينية وإثيوبية</title>
+    <title>مكتب استقدام عمالة منزلية بالرياض | خدمات استقدام متميزة</title>
+    <meta name="description" content="أفضل مكتب استقدام عمالة منزلية بالرياض. نوفر خادمات وطباخات وعاملات رعاية كبار السن والأطفال بأعلى كفاءة وأسرع إنجاز.">
     <style>
         :root {
             --primary: #0f172a;
@@ -17,164 +18,205 @@
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg-light); color: var(--text-dark); line-height: 1.8; padding-bottom: 100px; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg-light); color: var(--text-dark); line-height: 2; padding-bottom: 90px; }
 
         .top-call-bar { background-color: var(--call); text-align: center; padding: 12px; }
         .top-call-btn { color: white; text-decoration: none; font-weight: bold; font-size: 1.05rem; display: inline-flex; align-items: center; gap: 8px; }
 
         .static-call-section { text-align: center; padding: 20px 10px; background: #fff; margin: 15px 0; border-top: 2px dashed #e2e8f0; border-bottom: 2px dashed #e2e8f0; }
-        .static-btn { display: inline-block; background-color: var(--call); color: white; padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; margin: 5px; }
-        .static-btn:hover { background-color: #0369a1; }
+        .static-btn { display: inline-block; background-color: var(--call); color: white; padding: 12px 22px; border-radius: 8px; text-decoration: none; font-weight: bold; margin: 5px; transition: 0.3s; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .static-btn:hover { opacity: 0.95; transform: translateY(-1px); }
 
         header { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); color: white; padding: 40px 20px; text-align: center; border-bottom: 4px solid var(--accent); }
         header h1 { font-size: 2.2rem; margin-bottom: 10px; font-weight: 800; }
-        header p { font-size: 1.1rem; opacity: 0.9; max-width: 600px; margin: 0 auto; }
+        header p { font-size: 1.1rem; opacity: 0.9; max-width: 750px; margin: 0 auto; }
 
-        .container { max-width: 900px; margin: 30px auto; padding: 0 15px; }
+        .container { max-width: 950px; margin: 30px auto; padding: 0 15px; }
         .section-card { background: var(--card-bg); border-radius: 16px; padding: 25px; margin-bottom: 25px; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05); border: 1px solid #e2e8f0; }
         .section-card h2 { color: var(--accent); font-size: 1.4rem; margin-bottom: 15px; padding-bottom: 10px; border-bottom: 2px solid #f1f5f9; display: flex; align-items: center; gap: 10px; }
-        .section-card p { color: var(--text-muted); font-size: 0.98rem; text-align: justify; margin-bottom: 15px; }
-
-        /* تنسيق صور السير الذاتية */
-        .cv-image-container { text-align: center; margin: 15px 0; }
-        .cv-image { width: 100%; max-width: 650px; height: auto; border-radius: 12px; border: 1px solid #cbd5e1; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+        .section-card p { color: var(--text-muted); font-size: 1rem; text-align: justify; margin-bottom: 15px; }
 
         .bottom-whatsapp-bar { background-color: var(--whatsapp); text-align: center; padding: 18px 20px; margin-top: 40px; }
         .bottom-whatsapp-btn { color: white; text-decoration: none; font-weight: bold; font-size: 1.1rem; display: inline-flex; align-items: center; justify-content: center; gap: 10px; width: 100%; max-width: 400px; background: rgba(255, 255, 255, 0.2); padding: 12px 20px; border-radius: 50px; }
 
         /* الأزرار العائمة */
-        .btn-float-single { position: fixed; bottom: 25px; width: 72px; height: 72px; border-radius: 50%; color: white; text-decoration: none; display: flex; align-items: center; justify-content: center; z-index: 1000; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); }
-        .whatsapp-float { right: 25px; background-color: var(--whatsapp); }
-        .call-float { left: 25px; background-color: var(--call); font-size: 32px; }
-        .whatsapp-icon-svg { width: 42px; height: 42px; fill: white; }
+        .btn-float { position: fixed; bottom: 20px; width: 60px; height: 60px; border-radius: 50%; color: white; text-decoration: none; display: flex; align-items: center; justify-content: center; z-index: 1000; box-shadow: 0 10px 20px rgba(0,0,0,0.2); font-size: 26px; }
+        .float-whatsapp { right: 20px; background-color: var(--whatsapp); }
+        .float-call { left: 20px; background-color: var(--call); }
 
         @media (max-width: 600px) {
             header h1 { font-size: 1.6rem; }
-            .btn-float-single { width: 62px; height: 62px; bottom: 20px; }
-            .whatsapp-float { right: 15px; }
-            .call-float { left: 15px; }
+            .btn-float { width: 52px; height: 52px; font-size: 22px; }
         }
     </style>
 </head>
 <body>
 
+    <!-- شريط الاتصال العلوي -->
     <div class="top-call-bar">
-        <a href="tel:+966558900935" class="top-call-btn">📞 اتصل بنا الآن: 966558900935+</a>
+        <a href="tel:0532608760" class="top-call-btn">📞 اتصل بنا الآن: 0532608760</a>
     </div>
 
-    <!-- أزرار ثابتة أعلى الصفحة -->
+    <!-- أزرار التواصل المباشرة علوية -->
     <div class="static-call-section">
-        <p style="margin-bottom: 10px; font-weight: bold;">للتواصل الفوري معنا وحجز العمالة:</p>
-        <a href="tel:+966558900935" class="static-btn">اتصل: 966558900935+</a>
-        <a href="tel:0532608760" class="static-btn">اتصل: 0532608760</a>
-        <a href="https://wa.me/966558900935?text=السلام%20علیکم%20أرغب%20في%20استقدام%20عاملة%20منزلية" class="static-btn" style="background-color: var(--whatsapp);" target="_blank">واتساب مباشر</a>
+        <p style="margin-bottom: 10px; font-weight: bold;">📞 للتواصل الفوري معنا وحجز العمالة المنزلية:</p>
+        <a href="tel:0532608760" class="static-btn">📞 اتصل مباشر: 0532608760</a>
+        <a href="https://wa.me/966532608760?text=السلام%20عليكم%20أرغب%20في%20استقدام%20عاملة%20منزلية" class="static-btn" style="background-color: var(--whatsapp);" target="_blank">💬 واتساب مباشر</a>
     </div>
 
     <header>
         <h1>مكتب استقدام عمالة منزلية بالرياض</h1>
-        <p>استقدام أفضل العاملات المنزلية. للطلب والاستفسار يمكنكم التواصل عبر الرقم 0532608760 أو الرقم الدولي 966558900935+.</p>
+        <p>نحن نوفر لكم أسرع وأفضل خدمات الاستقدام المعتمدة بالرياض بكفاءة عالية وضمان شامل. يسعدنا استقبال اتصالاتكم واستفساراتكم على الرقم 0532608760 لخدمتكم فوراً.</p>
     </header>
 
     <div class="container">
 
-        <!-- أحدث السير الذاتية المتاحة -->
+        <!-- القسم الأول -->
         <div class="section-card">
-            <h2><span>📋</span> السير الذاتية المتاحة للاستقدام الفوري</h2>
-            <p>اختر السيرة الذاتية المناسبة لطلبك واضغط على زر الحجز للتواصل الفوري معنا عبر الواتساب:</p>
-
-            <!-- سيرة ذاتية 1 -->
-            <div style="margin-bottom: 25px; border-bottom: 1px solid #e2e8f0; padding-bottom: 15px;">
-                <h3 style="font-size: 1.1rem; color: #1e293b; margin-bottom: 10px;">سيرة ذاتية 1</h3>
-                <div class="cv-image-container">
-                    <a href="https://i.ibb.co/VY2Cb8bG/image.jpg" target="_blank">
-                        <img src="https://i.ibb.co/VY2Cb8bG/image.jpg" alt="سيرة ذاتية 1" class="cv-image">
-                    </a>
-                </div>
-                <div style="text-align: center;">
-                    <a href="https://wa.me/966558900935?text=السلام%20علیکم%20أرغب%20في%20حجز%20السيرة%20الذاتية%20رقم%201" class="static-btn" style="background-color: var(--whatsapp);" target="_blank">حجز هذه العاملة عبر الواتساب</a>
-                </div>
-            </div>
-
-            <!-- سيرة ذاتية 2 -->
-            <div style="margin-bottom: 25px; border-bottom: 1px solid #e2e8f0; padding-bottom: 15px;">
-                <h3 style="font-size: 1.1rem; color: #1e293b; margin-bottom: 10px;">سيرة ذاتية 2</h3>
-                <div class="cv-image-container">
-                    <a href="https://i.ibb.co/v4wV9kJw/image.jpg" target="_blank">
-                        <img src="https://i.ibb.co/v4wV9kJw/image.jpg" alt="سيرة ذاتية 2" class="cv-image">
-                    </a>
-                </div>
-                <div style="text-align: center;">
-                    <a href="https://wa.me/966558900935?text=السلام%20علیکم%20أرغب%20في%20حجز%20السيرة%20الذاتية%20رقم%202" class="static-btn" style="background-color: var(--whatsapp);" target="_blank">حجز هذه العاملة عبر الواتساب</a>
-                </div>
-            </div>
-
-            <!-- سيرة ذاتية 3 -->
-            <div style="margin-bottom: 25px; border-bottom: 1px solid #e2e8f0; padding-bottom: 15px;">
-                <h3 style="font-size: 1.1rem; color: #1e293b; margin-bottom: 10px;">سيرة ذاتية 3</h3>
-                <div class="cv-image-container">
-                    <a href="https://i.ibb.co/KcTLF3Fw/image.jpg" target="_blank">
-                        <img src="https://i.ibb.co/KcTLF3Fw/image.jpg" alt="سيرة ذاتية 3" class="cv-image">
-                    </a>
-                </div>
-                <div style="text-align: center;">
-                    <a href="https://wa.me/966558900935?text=السلام%20علیکم%20أرغب%20في%20حجز%20السيرة%20الذاتية%20رقم%203" class="static-btn" style="background-color: var(--whatsapp);" target="_blank">حجز هذه العاملة عبر الواتساب</a>
-                </div>
-            </div>
-
-            <!-- سيرة ذاتية 4 -->
-            <div>
-                <h3 style="font-size: 1.1rem; color: #1e293b; margin-bottom: 10px;">سيرة ذاتية 4</h3>
-                <div class="cv-image-container">
-                    <a href="https://i.ibb.co/Z6yPkPdB/image.jpg" target="_blank">
-                        <img src="https://i.ibb.co/Z6yPkPdB/image.jpg" alt="سيرة ذاتية 4" class="cv-image">
-                    </a>
-                </div>
-                <div style="text-align: center;">
-                    <a href="https://wa.me/966558900935?text=السلام%20علیکم%20أرغب%20في%20حجز%20السيرة%20الذاتية%20رقم%204" class="static-btn" style="background-color: var(--whatsapp);" target="_blank">حجز هذه العاملة عبر الواتساب</a>
-                </div>
+            <h2><span>📋</span> القسم الأول: خدمات الاستقدام الفوري والمعتمد بالرياض</h2>
+            <p>
+                يعتبر مكتبنا بالرياض من الأماكن المعتمدة والرائدة في تقديم كافة خدمات استقدام العمالة المنزلية بكل احترافية.<br>
+                نحرص على توفير إجراءات مرنة وسريعة تضمن وصول العاملة المنزلية في أسرع وقت ممكن وبأقل التكاليف المتاحة.<br>
+                نعمل وفق أعلى معايير الجودة للحرص على اختيار العاملات ذوات الخبرة والكفاءة العالية لخدمة جميع الأسر.<br>
+                سواء كنت تبحث عن عاملات للتنظيف أو لرعاية الأطفال أو المساعدة في إدارة أعمال المنزل بشكل يومي.<br>
+                فإن فريقنا متخصص في مطابقة جميع المهارات والطلبات التي يحتاجها العميل لضمان الرضا التام والراحة النفسية.<br>
+                نحن نهتم بكافة التفاصيل النظامية والقانونية بدءاً من اختيار السيرة الذاتية وحتى وصول العاملة للمملكة.<br>
+                نوفر لكم متابعة مستمرة وخدمة عملاء متواجدة للرد على جميع الاستفسارات والأسئلة طوال اليوم بكل رحابة صدر.<br>
+                هدفنا الأساسي هو بناء ثقة مستمرة مع العملاء وتوفير الكوادر الموثوقة التي تلبي كافة الاحتياجات المنزلية.<br>
+                تواصل معنا الآن عبر الرقم المباشر لمعرفة كافة التفاصيل والأسعار والخيارات المتاحة للاستقدام الفوري بدون تأخير.<br>
+                احجز طلبك الآن بكل سهولة ويسر ويسعدنا تقديم الاستشارة المجانية لك عبر رقم التواصل الموحد 0532608760.
+            </p>
+            <div style="text-align: center; margin-top: 15px;">
+                <a href="https://wa.me/966532608760?text=السلام%20عليكم%20أرغب%20في%20استفسار%20عن%20القسم%20الأول" class="static-btn" style="background-color: var(--whatsapp);" target="_blank">💬 استفسر عبر الواتساب</a>
             </div>
         </div>
 
-        <!-- أجزاء الخدمات والمعلومات الشاملة -->
+        <!-- القسم الثاني -->
         <div class="section-card">
-            <h2><span>💡</span> قسم المهارات والخبرات الخاصة</h2>
-            <p>حرصنا في مكتبنا بالرياض على انتقاء كوادر تتمتع بمهارات عالية. لتفاصيل أكثر، يسعدنا تواصلكم على الأرقام 0532608760 أو 966558900935+. تتميز العاملات من الفلبين وإثيوبيا بإتقان التمريض واللغة الإنجليزية مما يضمن لكم راحة تامة.</p>
+            <h2><span>🧹</span> القسم الثاني: مهارات التنظيف الشامل وإدارة المنازل</h2>
+            <p>
+                نولي اهتماماً كبيراً باختيار الكوادر المنزلية التي تمتاز بخبرة متقدمة في مجالات التنظيف العميق والترتيب.<br>
+                تتمتع عاملاتنا بقدرة ممتازة على التكيف مع متطلبات المنازل الكبيرة والفلل وتأدية كافة المهام بدقة وسرعة.<br>
+                يشمل ذلك تنظيف الأرضيات والمفروشات والعناية بالأثاث واستخدام أدوات التنظيف الحديثة بأعلى درجات الأمان.<br>
+                كما يتمتعن بمهارات تنظيم وتغليف وغسيل الملابس وكويها بأسلوب احترافي يحافظ على جودتها ونظافتها تماماً.<br>
+                نضمن لك البيئة الصحية والمنزل المنظم والنظيف بصورة يومية يمنح عائلتك الراحة والاستقرار التام دائماً.<br>
+                خضعت كافة العاملات لتدريبات مكثفة تضمن فهم أصول الضيافة وتنسيق المجالس واحتياجات الأسر السعودية.<br>
+                الالتزام بالوقت والمواعيد وحسن التصرف والأمانة هي الصفات الأساسية التي نضمنها في كل عاملة نختارها لكم.<br>
+                كما يمكنك اختيار المهارات المحددة التي تتوافق مع نظام بيتك اليومي للحصول على النتيجة المطلوبة بالضبط.<br>
+                نحن نعمل على توفير خيارات متنوعة تناسب الميزانيات والتفضيلات المختلفة مع ضمان الدعم الكامل طوال الفترة.<br>
+                لا تتردد في الاتصال بنا الآن واستكشاف العمالة المتاحة للتنظيف والتدبير عبر الرقم المباشر 0532608760.
+            </p>
+            <div style="text-align: center; margin-top: 15px;">
+                <a href="https://wa.me/966532608760?text=السلام%20عليكم%20أرغب%20في%20عاملة%20تنظيف" class="static-btn" style="background-color: var(--whatsapp);" target="_blank">💬 حجز عاملة تنظيف</a>
+            </div>
         </div>
 
-        <div class="section-card">
-            <h2><span>🧹</span> خدمات النظافة والتدبير المنزلي</h2>
-            <p>نضمن لكم استقدام عاملات يمتلكن خبرات واسعة في التنظيف والتدبير. لطلب الخدمة اليوم، يرجى الاتصال بنا مباشرة على 0532608760 أو عبر الواتساب 966558900935+ للحصول على السيرة الذاتية المناسبة لبيتك.</p>
-        </div>
-
-        <!-- أزرار ثابتة في منتصف الصفحة -->
+        <!-- أزرار اتصال ثابتة وسط الصفحة -->
         <div class="static-call-section">
-            <a href="tel:+966558900935" class="static-btn">اتصل الآن: 966558900935+</a>
-            <a href="tel:0532608760" class="static-btn">اتصل الآن: 0532608760</a>
+            <p style="margin-bottom: 10px; font-weight: bold;">📞 اتصل بنا مباشرة للاستفسار والحجز:</p>
+            <a href="tel:0532608760" class="static-btn">📞 اتصل الآن: 0532608760</a>
+            <a href="https://wa.me/966532608760" class="static-btn" style="background-color: var(--whatsapp);" target="_blank">💬 راسلنا واتساب</a>
         </div>
 
+        <!-- القسم الثالث -->
         <div class="section-card">
-            <h2><span>👶</span> رعاية الأطفال وكبار السن</h2>
-            <p>رعاية الأطفال وكبار السن خدمة حساسة، لذا اخترنا لكم أفضل الكوادر. للاستفسار عن توفر العمالة، تواصلوا معنا فوراً على 0532608760 أو 966558900935+ وسيقوم فريق الدعم بمساعدتكم فوراً.</p>
+            <h2><span>👶</span> القسم الثالث: رعاية الأطفال والعناية بالحديثين والرضع</h2>
+            <p>
+                تعتبر خدمة رعاية الأطفال من أكثر الخدمات التي نوليها اهتماماً استثنائياً وفائقاً لضمان سلامة أطفالكم.<br>
+                نوفر مربيات وعاملات يمتلكن الرفق والصبر والخبرة السابقة في التعامل مع الأطفال بمختلف المراحل العمرية.<br>
+                تشمل الخدمة الاهتمام بنظافة الطفل الشخصية وتجهيز الوجبات المغذية والمناسبة وتحضير الملابس الخاصة به.<br>
+                كما تجيد العاملات التعامل مع حديثي الولادة والرضع بكل حرص وعناية مع الاهتمام بجدول نومهم ورعايتهم.<br>
+                تتمتع العديد من العاملات بمهارات التواصل الإيجابي وتوفير بيئة آمنة ومسلية ومفيدة للطفل داخل المنزل.<br>
+                نحرص على الفحص الطبي الشامل للتأكد من سلامة العاملة خلوها تماماً من أي أمراض قبل وصولها لأسرتكم.<br>
+                يساعدك وجود مربية أطفال متخصصة في التركيز على أعمالك اليومية وأنت مطمئن تماماً على طفلك الصغير.<br>
+                نستمع جيداً لتفاصيل طلبك لنرشح لك العاملة الأنسب التي تمتلك الحنان والخبرة اللازمة للتعامل مع طفلك.<br>
+                جميع السير الذاتية المتاحة لدينا تم فحصها بعناية لضمان أعلى مستويات الأمان والأمانة في التعامل مع الأطفال.<br>
+                للمزيد من الاستفسارات واختيار العاملة الأنسب لرعاية أطفالك تواصل معنا فوراً على الرقم 0532608760.
+            </p>
+            <div style="text-align: center; margin-top: 15px;">
+                <a href="https://wa.me/966532608760?text=السلام%20عليكم%20أرغب%20في%20عاملة%20لرعاية%20الأطفال" class="static-btn" style="background-color: var(--whatsapp);" target="_blank">💬 طلب رعاية أطفال</a>
+            </div>
         </div>
 
+        <!-- القسم الرابع -->
         <div class="section-card">
-            <h2><span>🍳</span> إعداد المأكولات وإدارة المطبخ</h2>
-            <p>طباخات مميزات من الفلبين وإثيوبيا بمهارات استثنائية. للحجز والاستفسار عن خدمات الطبخ المنزلي، اتصلوا بنا على 0532608760 أو عبر 966558900935+.</p>
+            <h2><span>👵</span> القسم الرابع: العناية المتميزة بكبار السن ورعايتهم</h2>
+            <p>
+                تقديم الرعاية والاهتمام لكبار السن يتطلب معاملة خاصة قائمة على الرحمة والصبر الشديد والاحترام الكامل.<br>
+                لذلك حرصنا على توفير كوادر منزلية متخصصة ومدرّبة على تقديم الدعم والعناية بكبار السن بكفاءة عالية.<br>
+                تتضمن مهام العاملة المساعدة في التنقل والمشي داخل المنزل والمحافظة على النظافة الشخصية والراحة الشاملة.<br>
+                إضافة إلى التذكير بمواعيد الأدوية والمشروبات وإعداد الطعام الصحي والمناسب للحالة الصحية للمسن.<br>
+                تتميز عاملاتنا بالقدرة على تقديم الدعم النفسي والمعنوي والتواجد الدائم بجانب كبار السن لتلبية طلباتهم.<br>
+                نحن نفهم تماماً مدى أهمية هذه الخدمة للأسر لذلك نختار العاملات اللاتي يمتلكن خلفية ورغبة حقيقية بالعمل.<br>
+                سواء كانت الحالة تتطلب رعاية يومية مستمرة أو مساعدة خفيفة فإننا نوفر لك الخيار المناسب لظروف أسرتك.<br>
+                يتم متابعة العاملة والتأكد من التزامها التام بكافة التوجيهات المطلوبة من الأهل لضمان أفضل خدمة ممكنة.<br>
+                نضمن لك الحصول على خدمة إنسانية واحترافية تسهم في توفير الراحة والطمأنينة لوالديك وأفراد أسرتك.<br>
+                تواصل معنا الآن لمناقشة التفاصيل وتحديد المتطلبات الخاصة برعاية كبار السن عبر الرقم 0532608760.
+            </p>
+            <div style="text-align: center; margin-top: 15px;">
+                <a href="https://wa.me/966532608760?text=السلام%20عليكم%20أرغب%20في%20عاملة%20لكبار%20السن" class="static-btn" style="background-color: var(--whatsapp);" target="_blank">💬 طلب رعاية كبار السن</a>
+            </div>
         </div>
 
-        <!-- أزرار ثابتة أسفل الصفحة -->
+        <!-- القسم الخامس -->
+        <div class="section-card">
+            <h2><span>🍳</span> القسم الخامس: الطبخ المنزلي وإعداد المأكولات العربية</h2>
+            <p>
+                إعداد الطعام والمأكولات هو جزء أساسي ومهم في أي منزل سعودي لذلك نوفر لكم طباخات ذوات مهارة عالية.<br>
+                تتمتع العاملات بالقدرة على تعلم وإتقان الأطباق السعودية والخليجية والمأكولات العربية بكل سهولة وسرعة.<br>
+                يشمل ذلك تحضير الوجبات اليومية وإعداد المشروبات الساخنة والباردة وتنظيم وتجهيز طاولات الطعام بشكل ممتاز.<br>
+                تراعي الطباخات أعلى درجات النظافة والتعقيم داخل المطبخ والعناية بجميع أدوات الطبخ والأجهزة الكهربائية.<br>
+                يمكن للعاملة الاهتمام بقائمة المشتريات والمقادير وتنظيم الثلاجة والمخزن بأسلوب مرتب ونظيف دائماً.<br>
+                سواء كنت بحاجة لطباخة بالكامل أو عاملة منزلية تمتلك مهارات أساسية بالطبخ والتنفيذ فإننا نوفر الخيارين.<br>
+                حرصنا على توفير سير ذاتية لعاملات سبق لهن العمل بالخليج ويمتلكن خبرة سابقة بمتطلبات المطبخ العربي.<br>
+                كما يمكن تدريب العاملة بسرعة على أطباق خاصة ورغبات الأسرة لضمان الحصول على وجبات طازجة ولذيذة.<br>
+                نضمن لك التنوع والاحترافية التي ترفع عنك عبء الطبخ والتحضير اليومي لتستمتع بوقتك مع عائلتك.<br>
+                استفسر الآن عن الطباخات المتاحة للاستقدام الفوري واطلع على المهارات عبر التواصل على 0532608760.
+            </p>
+            <div style="text-align: center; margin-top: 15px;">
+                <a href="https://wa.me/966532608760?text=السلام%20عليكم%20أرغب%20في%20طباخة%20منزلية" class="static-btn" style="background-color: var(--whatsapp);" target="_blank">💬 طلب طباخة منزلية</a>
+            </div>
+        </div>
+
+        <!-- القسم السادس -->
+        <div class="section-card">
+            <h2><span>🛡️</span> القسم السادس: الضمانات والتعامل النظامي وسرعة الإنجاز</h2>
+            <p>
+                نحرص في مكتبنا على تقديم خدمة استقدام موثوقة تستند إلى الالتزام الكامل بالأنظمة والتعليمات الرسمية.<br>
+                نوفر لعملائنا الكرام عقوداً واضحة وضمانات شاملة لحماية كافة الحقوق طوال فترة الاستقدام والتجربة.<br>
+                يتضمن الضمان متابعة دقيقة للعاملة والتعامل مع أي استفسارات أو ملاحظات قد تظهر خلال الفترة الأولى.<br>
+                نضمن لك سرعة إنهاء المعاملات والأوراق الرسمية لضمان وصول العمالة في وقت قياسي ودون أخير تذكر.<br>
+                يتكون فريق العمل لدينا من موظفين متخصصين يسعون دائماً لتقديم المساعدة والتوجيه الصحيح لكل عميل.<br>
+                نحن نؤمن بأن الشفافية والصق هما أساس النجاح والاستمرار في خدمة أهالي الرياض وكافة مناطق المملكة.<br>
+                يتم اختيار جميع العمالة بناءً على الفحوصات الصحية والمقابلة الشخصية والتأكد من جاهزيتهن النفسية للعمل.<br>
+                نوفر لك دعم متواصل بعد وصول العاملة لمساعدتك في توجيهها وتسهيل اندماجها في بيئة العمل المنزلية.<br>
+                هدفنا هو تقديم تجربة استقدام سهلة ومريحة تغنيك عن أي عناء أو مشاكل وتوفر لك الراحة التي تستحقها.<br>
+                تواصل معنا الآن وكن أحد عملائنا المتميزين واستمتع بأفضل خدمات الاستقدام بالرياض عبر الرقم 0532608760.
+            </p>
+            <div style="text-align: center; margin-top: 15px;">
+                <a href="https://wa.me/966532608760?text=السلام%20عليكم%20أرغب%20في%20الاستفسار%20عن%20الضمانات" class="static-btn" style="background-color: var(--whatsapp);" target="_blank">💬 تواصل للاستفسار والضمان</a>
+            </div>
+        </div>
+
+        <!-- أزرار اتصال ثابتة أسفل الصفحة -->
         <div class="static-call-section">
-            <p style="margin-bottom: 10px; font-weight: bold;">لا تتردد في الاتصال بنا:</p>
-            <a href="tel:+966558900935" class="static-btn">جوال 1: 966558900935+</a>
-            <a href="tel:0532608760" class="static-btn">جوال 2: 0532608760</a>
+            <p style="margin-bottom: 10px; font-weight: bold;">📞 لا تتردد في الاتصال بنا مباشرة:</p>
+            <a href="tel:0532608760" class="static-btn">📞 جوال مباشر: 0532608760</a>
+            <a href="https://wa.me/966532608760" class="static-btn" style="background-color: var(--whatsapp);" target="_blank">💬 تواصل عبر الواتساب</a>
         </div>
+
     </div>
 
     <!-- شريط الواتساب السفلي -->
     <div class="bottom-whatsapp-bar">
-        <a href="https://wa.me/966532608760?text=السلام%20علیکم%20أرغب%20في%20الاستفسار%20عن%20سير%20ذاتية%20إضافية" class="bottom-whatsapp-btn" target="_blank">
-            <span>💬</span> تواصل معنا فوراً عبر الواتساب (رقم 2)
+        <a href="https://wa.me/966532608760?text=السلام%20عليكم%20أرغب%20في%20الاستفسار%20عن%20الخدمات" class="bottom-whatsapp-btn" target="_blank">
+            💬 تواصل معنا فوراً عبر الواتساب: 0532608760
         </a>
     </div>
 
-    <!-- الأزرار العائمة -->
+    <!-- الأزرار العائمة الثابتة على الشاشة -->
+    <a href="https://wa.me/966532608760" class="btn-float float-whatsapp" target="_blank" aria-label="WhatsApp">💬</a>
+    <a href="tel:0532608760" class="btn-float float-call" aria-label="Call">📞</a>
+
+</body>
+</html>
