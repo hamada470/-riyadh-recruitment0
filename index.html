@@ -33,20 +33,20 @@
         }
 
         header {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            background: linear-gradient(rgba(30, 58, 138, 0.85), rgba(2, 132, 199, 0.85)), url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
             color: white;
-            padding: 50px 20px;
+            padding: 70px 20px;
             text-align: center;
         }
 
         header h1 {
-            font-size: 2rem;
+            font-size: 2.2rem;
             margin-bottom: 15px;
         }
 
         header p {
-            font-size: 1.1rem;
-            max-width: 600px;
+            font-size: 1.15rem;
+            max-width: 650px;
             margin: 0 auto 25px;
             opacity: 0.95;
         }
@@ -94,22 +94,31 @@
             font-size: 1.6rem;
             color: var(--primary-color);
             margin-bottom: 30px;
-            position: relative;
         }
 
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
+            gap: 25px;
             margin-bottom: 40px;
         }
 
         .card {
             background: white;
-            padding: 25px;
             border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.04);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+            overflow: hidden;
             border-top: 4px solid var(--secondary-color);
+        }
+
+        .card-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
         }
 
         .card h3 {
@@ -143,6 +152,23 @@
             border-radius: 12px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.04);
             margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .features-img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            object-fit: cover;
+            height: 200px;
+        }
+
+        .features-text {
+            flex: 1;
+            min-width: 250px;
         }
 
         .features h2 {
@@ -168,10 +194,6 @@
             margin-top: 50px;
         }
 
-        footer p {
-            font-size: 0.9rem;
-        }
-
         .floating-whatsapp {
             position: fixed;
             bottom: 20px;
@@ -193,7 +215,7 @@
 </head>
 <body>
 
-    <!-- الهيدر الرئيسي -->
+    <!-- الهيدر الرئيسي مع خلفية صوّرة -->
     <header>
         <h1>مكتب استقدام عمالة منزلية بالرياض</h1>
         <p>نوفر لكم أفضل العاملات المنزلية والسائقين الخاصين من الفليبين وإثيوبيا بإجراءات نظامية وسريعة واحترافية عالية.</p>
@@ -210,31 +232,40 @@
         <div class="grid">
             <!-- قسم الفليبين -->
             <div class="card">
-                <h3>استقدام عمالة من الفليبين</h3>
-                <ul>
-                    <li>إتقان إنجليزي ممتاز وتواصل سهل</li>
-                    <li>خبرة عالية في العناية بالأطفال وكبار السن</li>
-                    <li>تدريب مسبق على ترتيب وإدارة المنزل</li>
-                    <li>التزام عالٍ وضمان معتمد</li>
-                </ul>
+                <img src="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=600&q=80" alt="عاملات من الفليبين" class="card-img">
+                <div class="card-content">
+                    <h3>استقدام عمالة من الفليبين</h3>
+                    <ul>
+                        <li>إتقان إنجليزي ممتاز وتواصل سهل</li>
+                        <li>خبرة عالية في العناية بالأطفال وكبار السن</li>
+                        <li>تدريب مسبق على ترتيب وإدارة المنزل</li>
+                        <li>التزام عالٍ وضمان معتمد</li>
+                    </ul>
+                </div>
             </div>
 
             <!-- قسم إثيوبيا -->
             <div class="card">
-                <h3>استقدام عمالة من إثيوبيا</h3>
-                <ul>
-                    <li>سرعة فائقة في إنهاء الإجراءات والاستقدام</li>
-                    <li>تكلفة اقتصادية ومناسبة للجميع</li>
-                    <li>سرعة التكيف والتعلم في بيئة العمل</li>
-                    <li>كفاءة واجتهاد في أعمال النظافة والطهي</li>
-                </ul>
+                <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=600&q=80" alt="عاملات من إثيوبيا" class="card-img">
+                <div class="card-content">
+                    <h3>استقدام عمالة من إثيوبيا</h3>
+                    <ul>
+                        <li>سرعة فائقة في إنهاء الإجراءات والاستقدام</li>
+                        <li>تكلفة اقتصادية ومناسبة للجميع</li>
+                        <li>سرعة التكيف والتعلم في بيئة العمل</li>
+                        <li>كفاءة واجتهاد في أعمال النظافة والطهي</li>
+                    </ul>
+                </div>
             </div>
         </div>
 
-        <!-- مميزات المكتب -->
+        <!-- مميزات المكتب مع صورة جانبية -->
         <div class="features">
-            <h2>لماذا تختار مكتبنا بالرياض؟</h2>
-            <p>نحن نضمن لك تجربة استقدام مريحة وسلسة عبر منصة مساند الرسمية، مع توفير عمالة مفحوصة طبياً ومدرّبة بشكل كامل لتلبية كافة احتياجات الأسرة السعودية بالرياض وبأعلى معايير الجودة.</p>
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="خدمات منزلية متكاملة" class="features-img">
+            <div class="features-text">
+                <h2>لماذا تختار مكتبنا بالرياض؟</h2>
+                <p>نحن نضمن لك تجربة استقدام مريحة وسلسة عبر منصة مساند الرسمية، مع توفير عمالة مفحوصة طبياً ومدرّبة بشكل كامل لتلبية كافة احتياجات الأسرة السعودية بالرياض وبأعلى معايير الجودة.</p>
+            </div>
         </div>
 
         <!-- النص المخصص للسيو وكلمات البحث -->
@@ -254,4 +285,3 @@
 
 </body>
 </html>
-
