@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>مكتب استقدام عمالة منزلية بالرياض | الفليبين وإثيوبيا</title>
     
-    <!-- كلمات السيو ووصف محركات البحث -->
     <meta name="description" content="أفضل مكتب استقدام عمالة منزلية بالرياض. نوفر عاملات منزلية ورعاة كبار السن من الفليبين وإثيوبيا بكفاءة عالية، سرعة إنجاز، وضمان شامل.">
     <meta name="keywords" content="استقدام عمالة منزلية الرياض, مكتب استقدام الرياض, عاملات منزلية من الفليبين, استقدام خادمة من إثيوبيا, خادمات فلبينيات الرياض, استقدام مساند">
     <meta name="author" content="مكتب استقدام بالرياض">
@@ -84,14 +83,14 @@
         }
 
         .container {
-            max-width: 900px;
+            max-width: 1100px;
             margin: 40px auto;
             padding: 0 20px;
         }
 
         .section-title {
             text-align: center;
-            font-size: 1.6rem;
+            font-size: 1.8rem;
             color: var(--primary-color);
             margin-bottom: 30px;
         }
@@ -100,187 +99,251 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 25px;
-            margin-bottom: 40px;
+            margin-bottom: 50px;
         }
 
         .card {
             background: white;
+            padding: 15px;
             border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.06);
-            overflow: hidden;
-            border-top: 4px solid var(--secondary-color);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
-        .card-img {
+        .card img {
             width: 100%;
-            height: 180px;
+            height: 320px;
             object-fit: cover;
-        }
-
-        .card-content {
-            padding: 20px;
-        }
-
-        .card h3 {
-            color: var(--primary-color);
+            border-radius: 8px;
             margin-bottom: 12px;
-            font-size: 1.3rem;
         }
 
-        .card ul {
-            list-style-type: none;
-            padding: 0;
+        .card-details {
+            margin-bottom: 15px;
         }
 
-        .card ul li {
-            margin-bottom: 8px;
-            position: relative;
-            padding-right: 20px;
+        .card-details h3 {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            margin-bottom: 5px;
         }
 
-        .card ul li::before {
-            content: "✓";
-            color: var(--secondary-color);
-            position: absolute;
-            right: 0;
-            font-weight: bold;
+        .card-details p {
+            font-size: 0.9rem;
+            color: #475569;
+            margin-bottom: 3px;
         }
 
         .features {
-            background: white;
+            background: #fff;
             padding: 30px;
             border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.04);
-            margin-bottom: 40px;
-            display: flex;
-            align-items: center;
+            margin-bottom: 50px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 20px;
-            flex-wrap: wrap;
+            text-align: center;
         }
 
-        .features-img {
-            width: 100%;
-            max-width: 300px;
-            border-radius: 10px;
-            object-fit: cover;
-            height: 200px;
+        .feature-item {
+            padding: 15px;
         }
 
-        .features-text {
-            flex: 1;
-            min-width: 250px;
-        }
-
-        .features h2 {
-            color: var(--primary-color);
-            margin-bottom: 15px;
-            font-size: 1.4rem;
-        }
-
-        .seo-text {
-            background: #e2e8f0;
-            padding: 20px;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            color: #334155;
-            margin-top: 30px;
+        .feature-item h4 {
+            color: var(--secondary-color);
+            margin-bottom: 8px;
         }
 
         footer {
-            background-color: #0f172a;
-            color: #94a3b8;
+            background: var(--primary-color);
+            color: white;
+            padding: 30px 20px;
             text-align: center;
-            padding: 25px 20px;
-            margin-top: 50px;
         }
 
-        .floating-whatsapp {
-            position: fixed;
-            bottom: 20px;
-            left: 20px;
-            background-color: var(--accent-color);
-            color: white;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 30px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-            text-decoration: none;
-            z-index: 1000;
+        footer p {
+            margin-bottom: 8px;
+            opacity: 0.9;
         }
     </style>
 </head>
 <body>
 
-    <!-- الهيدر الرئيسي مع خلفية صوّرة -->
     <header>
         <h1>مكتب استقدام عمالة منزلية بالرياض</h1>
-        <p>نوفر لكم أفضل العاملات المنزلية من الفليبين وإثيوبيا بإجراءات نظامية وسريعة واحترافية عالية.</p>
+        <p>نوفر لكم أفضل العاملات المنزلية من الفليبين وإثيوبيا بكفاءة عالية وضمان شامل لجميع الخدمات</p>
         <div class="cta-buttons">
-            <a href="https://wa.me/966500000000" class="btn btn-whatsapp">تواصل عبر الواتساب</a>
-            <a href="tel:0500000000" class="btn btn-call">اتصل بنا الآن</a>
+            <a href="https://wa.me/966558900935" class="btn btn-whatsapp" target="_blank">تواصل عبر الواتساب</a>
+            <a href="tel:+966558900935" class="btn btn-call">اتصل بنا مباشرة</a>
         </div>
     </header>
 
     <div class="container">
 
-        <h2 class="section-title">خدمات الاستقدام حسب الدولة</h2>
+        <section class="features">
+            <h2 class="section-title">لماذا تختار خدماتنا؟</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h4>اختيار دقيق</h4>
+                    <p>اختيار الكفاءات بناءً على الخبرة والتدريب العالي.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>سرعة الإنجاز</h4>
+                    <p>متابعة وتخليص كافة الإجراءات بأسرع وقت ممكن.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>ضمان شامل</h4>
+                    <p>ضمان كامل على العمالة حسب الأنظمة واللوائح الرسمية.</p>
+                </div>
+            </div>
+        </section>
+
+        <h2 class="section-title">العاملات المتاحة للاستقدام الفوري</h2>
 
         <div class="grid">
-            <!-- قسم الفليبين -->
+
+            <!-- عاملة 1 -->
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=600&q=80" alt="عاملات من الفليبين" class="card-img">
-                <div class="card-content">
-                    <h3>استقدام عمالة من الفليبين</h3>
-                    <ul>
-                        <li>إتقان إنجليزي ممتاز وتواصل سهل</li>
-                        <li>خبرة عالية في العناية بالأطفال وكبار السن</li>
-                        <li>تدريب مسبق على ترتيب وإدارة المنزل</li>
-                        <li>التزام عالٍ وضمان معتمد</li>
-                    </ul>
+                <img src="1000008551.jpg" alt="Alma Tumapon Dahil-Dahil">
+                <div class="card-details">
+                    <h3>Alma Tumapon Dahil-Dahil</h3>
+                    <p><strong>الرقم المرجعي:</strong> ID-260809</p>
+                    <p><strong>الجنسية:</strong> الفليبين | <strong>الديانة:</strong> غير مسلمة</p>
+                    <p><strong>العمر:</strong> 37 سنة | <strong>الراتب:</strong> 1500 ريال</p>
+                    <p><strong>الخبرة:</strong> لم يسبق لها العمل (First Timer)</p>
                 </div>
+                <a href="https://wa.me/966558900935?text=أرغب%20في%20استقدام%20العاملة:%20Alma%20Tumapon%20Dahil-Dahil%20(ID-260809)" class="btn btn-whatsapp" style="text-align:center; font-size: 0.9rem;" target="_blank">طلب العاملة عبر واتساب</a>
             </div>
 
-            <!-- قسم إثيوبيا -->
+            <!-- عاملة 2 -->
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=600&q=80" alt="عاملات من إثيوبيا" class="card-img">
-                <div class="card-content">
-                    <h3>استقدام عمالة من إثيوبيا</h3>
-                    <ul>
-                        <li>سرعة فائقة في إنهاء الإجراءات والاستقدام</li>
-                        <li>تكلفة اقتصادية ومناسبة للجميع</li>
-                        <li>سرعة التكيف والتعلم في بيئة العمل</li>
-                        <li>كفاءة واجتهاد في أعمال النظافة والطهي</li>
-                    </ul>
+                <img src="1000008549.jpg" alt="Evelyn Galema Ybo">
+                <div class="card-details">
+                    <h3>Evelyn Galema Ybo</h3>
+                    <p><strong>الرقم المرجعي:</strong> CONF-TRO-000269</p>
+                    <p><strong>الجنسية:</strong> الفليبين | <strong>الديانة:</strong> غير مسلمة</p>
+                    <p><strong>العمر:</strong> 39 سنة | <strong>الراتب:</strong> 1500 ريال</p>
+                    <p><strong>الخبرة:</strong> سنتين في الكويت</p>
                 </div>
+                <a href="https://wa.me/966558900935?text=أرغب%20في%20استقدام%20العاملة:%20Evelyn%20Galema%20Ybo%20(CONF-TRO-000269)" class="btn btn-whatsapp" style="text-align:center; font-size: 0.9rem;" target="_blank">طلب العاملة عبر واتساب</a>
             </div>
-        </div>
 
-        <!-- مميزات المكتب مع صورة جانبية -->
-        <div class="features">
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="خدمات منزلية متكاملة" class="features-img">
-            <div class="features-text">
-                <h2>لماذا تختار مكتبنا بالرياض؟</h2>
-                <p>نحن نضمن لك تجربة استقدام مريحة وسلسة عبر منصة مساند الرسمية، مع توفير عمالة مفحوصة طبياً ومدرّبة بشكل كامل لتلبية كافة احتياجات الأسرة السعودية بالرياض وبأعلى معايير الجودة.</p>
+            <!-- عاملة 3 -->
+            <div class="card">
+                <img src="1000008545.jpg" alt="Princess Iris Regalo Cosme">
+                <div class="card-details">
+                    <h3>Princess Iris Regalo Cosme</h3>
+                    <p><strong>الرقم المرجعي:</strong> CONF-TRO-000280</p>
+                    <p><strong>الجنسية:</strong> الفليبين | <strong>الديانة:</strong> غير مسلمة</p>
+                    <p><strong>العمر:</strong> 28 سنة | <strong>الراتب:</strong> 1500 ريال</p>
+                    <p><strong>الخبرة:</strong> سنة في عُمان</p>
+                </div>
+                <a href="https://wa.me/966558900935?text=أرغب%20في%20استقدام%20العاملة:%20Princess%20Iris%20Regalo%20Cosme%20(CONF-TRO-000280)" class="btn btn-whatsapp" style="text-align:center; font-size: 0.9rem;" target="_blank">طلب العاملة عبر واتساب</a>
             </div>
-        </div>
 
-        <!-- النص المخصص للسيو وكلمات البحث -->
-        <div class="seo-text">
-            <h3>أفضل خدمة استقدام عمالة بالرياض</h3>
-            <p>نوفر لكم خدمات استقدام شاملة تتضمن: خادمات فلبينيات، عاملات إثيوبيات، وطباخات منازل. خدماتنا تغطي كافة أحياء الرياض مع توفير الضمان الشامل والمتابعة المستمرة لضمان رضا العميل.</p>
-        </div>
+            <!-- عاملة 4 -->
+            <div class="card">
+                <img src="1000008541.jpg" alt="Lieann Sarcena Castillon">
+                <div class="card-details">
+                    <h3>Lieann Sarcena Castillon</h3>
+                    <p><strong>الرقم المرجعي:</strong> CONF-TRO-000275</p>
+                    <p><strong>الجنسية:</strong> الفليبين | <strong>الديانة:</strong> غير مسلمة</p>
+                    <p><strong>العمر:</strong> 34 سنة | <strong>الراتب:</strong> 1500 ريال</p>
+                    <p><strong>الخبرة:</strong> لم يسبق لها العمل (First Timer)</p>
+                </div>
+                <a href="https://wa.me/966558900935?text=أرغب%20في%20استقدام%20العاملة:%20Lieann%20Sarcena%20Castillon%20(CONF-TRO-000275)" class="btn btn-whatsapp" style="text-align:center; font-size: 0.9rem;" target="_blank">طلب العاملة عبر واتساب</a>
+            </div>
 
+            <!-- عاملة 5 -->
+            <div class="card">
+                <img src="1000008543.jpg" alt="Jevs Ashly Kate Ambagan Matienzo">
+                <div class="card-details">
+                    <h3>Jevs Ashly Kate Matienzo</h3>
+                    <p><strong>الرقم المرجعي:</strong> CONF-TRO-000273</p>
+                    <p><strong>الجنسية:</strong> الفليبين | <strong>الديانة:</strong> غير مسلمة</p>
+                    <p><strong>العمر:</strong> 29 سنة | <strong>الراتب:</strong> 1500 ريال</p>
+                    <p><strong>الخبرة:</strong> لم يسبق لها العمل (First Timer)</p>
+                </div>
+                <a href="https://wa.me/966558900935?text=أرغب%20في%20استقدام%20العاملة:%20Jevs%20Ashly%20Kate%20Matienzo%20(CONF-TRO-000273)" class="btn btn-whatsapp" style="text-align:center; font-size: 0.9rem;" target="_blank">طلب العاملة عبر واتساب</a>
+            </div>
+
+            <!-- عاملة 6 -->
+            <div class="card">
+                <img src="1000008547.jpg" alt="Angela Enero Zabanal">
+                <div class="card-details">
+                    <h3>Angela Enero Zabanal</h3>
+                    <p><strong>الرقم المرجعي:</strong> CONF-TRO-000271</p>
+                    <p><strong>الجنسية:</strong> الفليبين | <strong>الديانة:</strong> غير مسلمة</p>
+                    <p><strong>العمر:</strong> 28 سنة | <strong>الراتب:</strong> 1500 ريال</p>
+                    <p><strong>الخبرة:</strong> سنتين في السعودية</p>
+                </div>
+                <a href="https://wa.me/966558900935?text=أرغب%20في%20استقدام%20العاملة:%20Angela%20Enero%20Zabanal%20(CONF-TRO-000271)" class="btn btn-whatsapp" style="text-align:center; font-size: 0.9rem;" target="_blank">طلب العاملة عبر واتساب</a>
+            </div>
+
+            <!-- عاملة 7 -->
+            <div class="card">
+                <img src="1000008539.jpg" alt="Jenifer Nala Mendoza">
+                <div class="card-details">
+                    <h3>Jenifer Nala Mendoza</h3>
+                    <p><strong>الرقم المرجعي:</strong> CONF-TRO-000277</p>
+                    <p><strong>الجنسية:</strong> الفليبين | <strong>الديانة:</strong> غير مسلمة</p>
+                    <p><strong>العمر:</strong> 35 سنة | <strong>الراتب:</strong> 1500 ريال</p>
+                    <p><strong>الخبرة:</strong> لم يسبق لها العمل (First Timer)</p>
+                </div>
+                <a href="https://wa.me/966558900935?text=أرغب%20في%20استقدام%20العاملة:%20Jenifer%20Nala%20Mendoza%20(CONF-TRO-000277)" class="btn btn-whatsapp" style="text-align:center; font-size: 0.9rem;" target="_blank">طلب العاملة عبر واتساب</a>
+            </div>
+
+            <!-- عاملة 8 -->
+            <div class="card">
+                <img src="1000008537.jpg" alt="Rose-Ann Silva Umangay">
+                <div class="card-details">
+                    <h3>Rose-Ann Silva Umangay</h3>
+                    <p><strong>الرقم المرجعي:</strong> ID-260719</p>
+                    <p><strong>الجنسية:</strong> الفليبين | <strong>الديانة:</strong> غير مسلمة</p>
+                    <p><strong>العمر:</strong> 41 سنة | <strong>الراتب:</strong> 1500 ريال</p>
+                    <p><strong>الخبرة:</strong> لم يسبق لها العمل (First Timer)</p>
+                </div>
+                <a href="https://wa.me/966558900935?text=أرغب%20في%20استقدام%20العاملة:%20Rose-Ann%20Silva%20Umangay%20(ID-260719)" class="btn btn-whatsapp" style="text-align:center; font-size: 0.9rem;" target="_blank">طلب العاملة عبر واتساب</a>
+            </div>
+
+            <!-- عاملة 9 -->
+            <div class="card">
+                <img src="1000008535.jpg" alt="Honey Jane Bernardino Luchica">
+                <div class="card-details">
+                    <h3>Honey Jane Bernardino Luchica</h3>
+                    <p><strong>الرقم المرجعي:</strong> ID-260729</p>
+                    <p><strong>الجنسية:</strong> الفليبين | <strong>الديانة:</strong> غير مسلمة</p>
+                    <p><strong>العمر:</strong> 34 سنة | <strong>الراتب:</strong> 1500 ريال</p>
+                    <p><strong>الخبرة:</strong> لم يسبق لها العمل (First Timer)</p>
+                </div>
+                <a href="https://wa.me/966558900935?text=أرغب%20في%20استقدام%20العاملة:%20Honey%20Jane%20Bernardino%20Luchica%20(ID-260729)" class="btn btn-whatsapp" style="text-align:center; font-size: 0.9rem;" target="_blank">طلب العاملة عبر واتساب</a>
+            </div>
+
+            <!-- عاملة 10 -->
+            <div class="card">
+                <img src="1000008531.jpg" alt="Marhada Anjurahman Mallaji">
+                <div class="card-details">
+                    <h3>Marhada Anjurahman Mallaji</h3>
+                    <p><strong>الرقم المرجعي:</strong> ID-260815</p>
+                    <p><strong>الجنسية:</strong> الفليبين | <strong>الديانة:</strong> مسلمة</p>
+                    <p><strong>العمر:</strong> 27 سنة | <strong>الراتب:</strong> 1500 ريال</p>
+                    <p><strong>الخبرة:</strong> 2.7 سنة في الطائف (السعودية)</p>
+                </div>
+                <a href="https://wa.me/966558900935?text=أرغب%20في%20استقدام%20العاملة:%20Marhada%20Anjurahman%20Mallaji%20(ID-260815)" class="btn btn-whatsapp" style="text-align:center; font-size: 0.9rem;" target="_blank">طلب العاملة عبر واتساب</a>
+            </div>
+
+        </div>
     </div>
 
-    <!-- زر الواتساب العائم -->
-    <a href="https://wa.me/966500000000" class="floating-whatsapp" target="_blank" title="تواصل معنا">💬</a>
-
     <footer>
-        <p>جميع الحقوق محفوظة © مكتب استقدام عمالة منزلية بالرياض | 2026</p>
+        <p>للتواصل والاستفسار المباشر: 0558900935</p>
+        <p>جميع الحقوق محفوظة &copy; 2026 - مكتب استقدام عمالة منزلية</p>
     </footer>
 
 </body>
