@@ -24,7 +24,7 @@
         .top-call-btn { color: white; text-decoration: none; font-weight: bold; font-size: 1.05rem; display: inline-flex; align-items: center; gap: 8px; }
 
         .static-call-section { text-align: center; padding: 20px 10px; background: #fff; margin: 15px 0; border-top: 2px dashed #e2e8f0; border-bottom: 2px dashed #e2e8f0; }
-        .static-btn { display: inline-block; background-color: var(--call); color: white; padding: 12px 22px; border-radius: 8px; text-decoration: none; font-weight: bold; margin: 5px; transition: 0.3s; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .static-btn { display: inline-block; background-color: var(--call); color: white; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: bold; margin: 5px; transition: 0.3s; box-shadow: 0 2px 5px rgba(0,0,0,0.1); font-size: 0.95rem; }
         .static-btn:hover { opacity: 0.95; transform: translateY(-1px); }
 
         header { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); color: white; padding: 40px 20px; text-align: center; border-bottom: 4px solid var(--accent); }
@@ -37,16 +37,19 @@
         .section-card p { color: var(--text-muted); font-size: 1rem; text-align: justify; margin-bottom: 15px; }
 
         .bottom-whatsapp-bar { background-color: var(--whatsapp); text-align: center; padding: 18px 20px; margin-top: 40px; }
-        .bottom-whatsapp-btn { color: white; text-decoration: none; font-weight: bold; font-size: 1.1rem; display: inline-flex; align-items: center; justify-content: center; gap: 10px; width: 100%; max-width: 400px; background: rgba(255, 255, 255, 0.2); padding: 12px 20px; border-radius: 50px; }
+        .bottom-whatsapp-btn { color: white; text-decoration: none; font-weight: bold; font-size: 1.1rem; display: inline-flex; align-items: center; justify-content: center; gap: 10px; width: 100%; max-width: 450px; background: rgba(255, 255, 255, 0.2); padding: 12px 20px; border-radius: 50px; }
 
-        /* الأزرار العائمة */
-        .btn-float { position: fixed; bottom: 20px; width: 60px; height: 60px; border-radius: 50%; color: white; text-decoration: none; display: flex; align-items: center; justify-content: center; z-index: 1000; box-shadow: 0 10px 20px rgba(0,0,0,0.2); font-size: 26px; }
-        .float-whatsapp { right: 20px; background-color: var(--whatsapp); }
+        /* الأزرار العائمة بالشكل والأيقونات الجديدة */
+        .btn-float { position: fixed; bottom: 20px; width: 60px; height: 60px; border-radius: 50%; color: white; text-decoration: none; display: flex; align-items: center; justify-content: center; z-index: 1000; box-shadow: 0 10px 25px rgba(0,0,0,0.25); transition: 0.3s; }
+        .btn-float:hover { transform: scale(1.08); }
+        .btn-float svg { width: 32px; height: 32px; fill: currentColor; }
+        .float-whatsapp { right: 20px; background-color: #25d366; }
         .float-call { left: 20px; background-color: var(--call); }
 
         @media (max-width: 600px) {
             header h1 { font-size: 1.6rem; }
-            .btn-float { width: 52px; height: 52px; font-size: 22px; }
+            .btn-float { width: 54px; height: 54px; }
+            .btn-float svg { width: 28px; height: 28px; }
         }
     </style>
 </head>
@@ -57,16 +60,16 @@
         <a href="tel:0532608760" class="top-call-btn">📞 اتصل بنا الآن: 0532608760</a>
     </div>
 
-    <!-- أزرار التواصل المباشرة علوية -->
+    <!-- أزرار الاتصال بطلب مباشر -->
     <div class="static-call-section">
         <p style="margin-bottom: 10px; font-weight: bold;">📞 للتواصل الفوري معنا وحجز العمالة المنزلية:</p>
-        <a href="tel:0532608760" class="static-btn">📞 اتصل مباشر: 0532608760</a>
-        <a href="https://wa.me/966532608760?text=السلام%20عليكم%20أرغب%20في%20استقدام%20عاملة%20منزلية" class="static-btn" style="background-color: var(--whatsapp);" target="_blank">💬 واتساب مباشر</a>
+        <a href="tel:0532608760" class="static-btn">📞 اتصل: 0532608760</a>
+        <a href="tel:+966558900935" class="static-btn">📞 اتصل: 966558900935+</a>
     </div>
 
     <header>
         <h1>مكتب استقدام عمالة منزلية بالرياض</h1>
-        <p>نحن نوفر لكم أسرع وأفضل خدمات الاستقدام المعتمدة بالرياض بكفاءة عالية وضمان شامل. يسعدنا استقبال اتصالاتكم واستفساراتكم على الرقم 0532608760 لخدمتكم فوراً.</p>
+        <p>نحن نوفر لكم أسرع وأفضل خدمات الاستقدام المعتمدة بالرياض بكفاءة عالية وضمان شامل. يسعدنا استقبال اتصالاتكم واستفساراتكم لخدمتكم فوراً.</p>
     </header>
 
     <div class="container">
@@ -84,10 +87,11 @@
                 نوفر لكم متابعة مستمرة وخدمة عملاء متواجدة للرد على جميع الاستفسارات والأسئلة طوال اليوم بكل رحابة صدر.<br>
                 هدفنا الأساسي هو بناء ثقة مستمرة مع العملاء وتوفير الكوادر الموثوقة التي تلبي كافة الاحتياجات المنزلية.<br>
                 تواصل معنا الآن عبر الرقم المباشر لمعرفة كافة التفاصيل والأسعار والخيارات المتاحة للاستقدام الفوري بدون تأخير.<br>
-                احجز طلبك الآن بكل سهولة ويسر ويسعدنا تقديم الاستشارة المجانية لك عبر رقم التواصل الموحد 0532608760.
+                احجز طلبك الآن بكل سهولة ويسر ويسعدنا تقديم الاستشارة المجانية لك عبر أرقام التواصل المتاحة.
             </p>
             <div style="text-align: center; margin-top: 15px;">
-                <a href="https://wa.me/966532608760?text=السلام%20عليكم%20أرغب%20في%20استفسار%20عن%20القسم%20الأول" class="static-btn" style="background-color: var(--whatsapp);" target="_blank">💬 استفسر عبر الواتساب</a>
+                <a href="tel:0532608760" class="static-btn">📞 اتصل: 0532608760</a>
+                <a href="tel:+966558900935" class="static-btn">📞 اتصل: 966558900935+</a>
             </div>
         </div>
 
@@ -104,18 +108,19 @@
                 الالتزام بالوقت والمواعيد وحسن التصرف والأمانة هي الصفات الأساسية التي نضمنها في كل عاملة نختارها لكم.<br>
                 كما يمكنك اختيار المهارات المحددة التي تتوافق مع نظام بيتك اليومي للحصول على النتيجة المطلوبة بالضبط.<br>
                 نحن نعمل على توفير خيارات متنوعة تناسب الميزانيات والتفضيلات المختلفة مع ضمان الدعم الكامل طوال الفترة.<br>
-                لا تتردد في الاتصال بنا الآن واستكشاف العمالة المتاحة للتنظيف والتدبير عبر الرقم المباشر 0532608760.
+                لا تتردد في الاتصال بنا الآن واستكشاف العمالة المتاحة للتنظيف والتدبير عبر الأرقام المباشرة.
             </p>
             <div style="text-align: center; margin-top: 15px;">
-                <a href="https://wa.me/966532608760?text=السلام%20عليكم%20أرغب%20في%20عاملة%20تنظيف" class="static-btn" style="background-color: var(--whatsapp);" target="_blank">💬 حجز عاملة تنظيف</a>
+                <a href="tel:0532608760" class="static-btn">📞 اتصل: 0532608760</a>
+                <a href="tel:+966558900935" class="static-btn">📞 اتصل: 966558900935+</a>
             </div>
         </div>
 
         <!-- أزرار اتصال ثابتة وسط الصفحة -->
         <div class="static-call-section">
             <p style="margin-bottom: 10px; font-weight: bold;">📞 اتصل بنا مباشرة للاستفسار والحجز:</p>
-            <a href="tel:0532608760" class="static-btn">📞 اتصل الآن: 0532608760</a>
-            <a href="https://wa.me/966532608760" class="static-btn" style="background-color: var(--whatsapp);" target="_blank">💬 راسلنا واتساب</a>
+            <a href="tel:0532608760" class="static-btn">📞 الرقم الأول: 0532608760</a>
+            <a href="tel:+966558900935" class="static-btn">📞 الرقم الثاني: 966558900935+</a>
         </div>
 
         <!-- القسم الثالث -->
@@ -131,10 +136,11 @@
                 يساعدك وجود مربية أطفال متخصصة في التركيز على أعمالك اليومية وأنت مطمئن تماماً على طفلك الصغير.<br>
                 نستمع جيداً لتفاصيل طلبك لنرشح لك العاملة الأنسب التي تمتلك الحنان والخبرة اللازمة للتعامل مع طفلك.<br>
                 جميع السير الذاتية المتاحة لدينا تم فحصها بعناية لضمان أعلى مستويات الأمان والأمانة في التعامل مع الأطفال.<br>
-                للمزيد من الاستفسارات واختيار العاملة الأنسب لرعاية أطفالك تواصل معنا فوراً على الرقم 0532608760.
+                للمزيد من الاستفسارات واختيار العاملة الأنسب لرعاية أطفالك تواصل معنا فوراً.
             </p>
             <div style="text-align: center; margin-top: 15px;">
-                <a href="https://wa.me/966532608760?text=السلام%20عليكم%20أرغب%20في%20عاملة%20لرعاية%20الأطفال" class="static-btn" style="background-color: var(--whatsapp);" target="_blank">💬 طلب رعاية أطفال</a>
+                <a href="tel:0532608760" class="static-btn">📞 اتصل: 0532608760</a>
+                <a href="tel:+966558900935" class="static-btn">📞 اتصل: 966558900935+</a>
             </div>
         </div>
 
@@ -151,10 +157,11 @@
                 سواء كانت الحالة تتطلب رعاية يومية مستمرة أو مساعدة خفيفة فإننا نوفر لك الخيار المناسب لظروف أسرتك.<br>
                 يتم متابعة العاملة والتأكد من التزامها التام بكافة التوجيهات المطلوبة من الأهل لضمان أفضل خدمة ممكنة.<br>
                 نضمن لك الحصول على خدمة إنسانية واحترافية تسهم في توفير الراحة والطمأنينة لوالديك وأفراد أسرتك.<br>
-                تواصل معنا الآن لمناقشة التفاصيل وتحديد المتطلبات الخاصة برعاية كبار السن عبر الرقم 0532608760.
+                تواصل معنا الآن لمناقشة التفاصيل وتحديد المتطلبات الخاصة برعاية كبار السن.
             </p>
             <div style="text-align: center; margin-top: 15px;">
-                <a href="https://wa.me/966532608760?text=السلام%20عليكم%20أرغب%20في%20عاملة%20لكبار%20السن" class="static-btn" style="background-color: var(--whatsapp);" target="_blank">💬 طلب رعاية كبار السن</a>
+                <a href="tel:0532608760" class="static-btn">📞 اتصل: 0532608760</a>
+                <a href="tel:+966558900935" class="static-btn">📞 اتصل: 966558900935+</a>
             </div>
         </div>
 
@@ -171,10 +178,11 @@
                 حرصنا على توفير سير ذاتية لعاملات سبق لهن العمل بالخليج ويمتلكن خبرة سابقة بمتطلبات المطبخ العربي.<br>
                 كما يمكن تدريب العاملة بسرعة على أطباق خاصة ورغبات الأسرة لضمان الحصول على وجبات طازجة ولذيذة.<br>
                 نضمن لك التنوع والاحترافية التي ترفع عنك عبء الطبخ والتحضير اليومي لتستمتع بوقتك مع عائلتك.<br>
-                استفسر الآن عن الطباخات المتاحة للاستقدام الفوري واطلع على المهارات عبر التواصل على 0532608760.
+                استفسر الآن عن الطباخات المتاحة للاستقدام الفوري واطلع على المهارات عبر التواصل معنا.
             </p>
             <div style="text-align: center; margin-top: 15px;">
-                <a href="https://wa.me/966532608760?text=السلام%20عليكم%20أرغب%20في%20طباخة%20منزلية" class="static-btn" style="background-color: var(--whatsapp);" target="_blank">💬 طلب طباخة منزلية</a>
+                <a href="tel:0532608760" class="static-btn">📞 اتصل: 0532608760</a>
+                <a href="tel:+966558900935" class="static-btn">📞 اتصل: 966558900935+</a>
             </div>
         </div>
 
@@ -191,32 +199,44 @@
                 يتم اختيار جميع العمالة بناءً على الفحوصات الصحية والمقابلة الشخصية والتأكد من جاهزيتهن النفسية للعمل.<br>
                 نوفر لك دعم متواصل بعد وصول العاملة لمساعدتك في توجيهها وتسهيل اندماجها في بيئة العمل المنزلية.<br>
                 هدفنا هو تقديم تجربة استقدام سهلة ومريحة تغنيك عن أي عناء أو مشاكل وتوفر لك الراحة التي تستحقها.<br>
-                تواصل معنا الآن وكن أحد عملائنا المتميزين واستمتع بأفضل خدمات الاستقدام بالرياض عبر الرقم 0532608760.
+                تواصل معنا الآن وكن أحد عملائنا المتميزين واستمتع بأفضل خدمات الاستقدام بالرياض.
             </p>
             <div style="text-align: center; margin-top: 15px;">
-                <a href="https://wa.me/966532608760?text=السلام%20عليكم%20أرغب%20في%20الاستفسار%20عن%20الضمانات" class="static-btn" style="background-color: var(--whatsapp);" target="_blank">💬 تواصل للاستفسار والضمان</a>
+                <a href="tel:0532608760" class="static-btn">📞 اتصل: 0532608760</a>
+                <a href="tel:+966558900935" class="static-btn">📞 اتصل: 966558900935+</a>
             </div>
         </div>
 
         <!-- أزرار اتصال ثابتة أسفل الصفحة -->
         <div class="static-call-section">
             <p style="margin-bottom: 10px; font-weight: bold;">📞 لا تتردد في الاتصال بنا مباشرة:</p>
-            <a href="tel:0532608760" class="static-btn">📞 جوال مباشر: 0532608760</a>
-            <a href="https://wa.me/966532608760" class="static-btn" style="background-color: var(--whatsapp);" target="_blank">💬 تواصل عبر الواتساب</a>
+            <a href="tel:0532608760" class="static-btn">📞 الرقم الأول: 0532608760</a>
+            <a href="tel:+966558900935" class="static-btn">📞 الرقم الثاني: 966558900935+</a>
         </div>
 
     </div>
 
-    <!-- شريط الواتساب السفلي -->
+    <!-- شريط الواتساب السفلي برقم الواتساب الثاني (الأخير) -->
     <div class="bottom-whatsapp-bar">
-        <a href="https://wa.me/966532608760?text=السلام%20عليكم%20أرغب%20في%20الاستفسار%20عن%20الخدمات" class="bottom-whatsapp-btn" target="_blank">
-            💬 تواصل معنا فوراً عبر الواتساب: 0532608760
+        <a href="https://wa.me/966558900935?text=السلام%20عليكم%20أرغب%20في%20الاستفسار%20عن%20خدمات%20الاستقدام" class="bottom-whatsapp-btn" target="_blank">
+            💬 تواصل معنا فوراً عبر الواتساب: 966558900935+
         </a>
     </div>
 
-    <!-- الأزرار العائمة الثابتة على الشاشة -->
-    <a href="https://wa.me/966532608760" class="btn-float float-whatsapp" target="_blank" aria-label="WhatsApp">💬</a>
-    <a href="tel:0532608760" class="btn-float float-call" aria-label="Call">📞</a>
+    <!-- الأزرار العائمة بالشكل والأيقونات الرسمية لـ الواتساب والاتصال -->
+    <!-- زر الواتساب العائم بالرقم الثاني الأخير مع الأيقونة الأصلية للتطبيق -->
+    <a href="https://wa.me/966558900935" class="btn-float float-whatsapp" target="_blank" aria-label="WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3 18.6-68.1-4.4-6.9c-18.6-29.5-28.4-63.3-28.4-98 0-101.3 82.5-183.8 183.8-183.8 49 0 95.1 19.1 129.7 53.7 34.6 34.6 53.7 80.7 53.7 129.7 0 101.4-82.5 183.9-183.8 183.9zm101-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+        </svg>
+    </a>
+
+    <!-- زر الاتصال العائم بأيقونة الاتصال المباشر -->
+    <a href="tel:0532608760" class="btn-float float-call" aria-label="Call">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 400C231.8 362 150 280.2 112 207.3l31.1-40.8c13.7-11.1 18.4-30 11.6-46.3l-40-96z"/>
+        </svg>
+    </a>
 
 </body>
 </html>
