@@ -17,9 +17,9 @@
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg-light); color: var(--text-dark); line-height: 1.8; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg-light); color: var(--text-dark); line-height: 1.8; padding-bottom: 90px; }
 
-        /* زر الاتصال أعلى الصفحة (غير عائق) */
+        /* 1. زر اتصال شريطي في أعلى الصفحة */
         .top-call-bar {
             background-color: var(--call);
             text-align: center;
@@ -68,7 +68,7 @@
         .section-card h2 { color: var(--accent); font-size: 1.5rem; margin-bottom: 15px; padding-bottom: 10px; border-bottom: 2px solid #f1f5f9; display: flex; align-items: center; gap: 10px; }
         .section-card p { color: var(--text-muted); font-size: 0.98rem; text-align: justify; }
 
-        /* زر الواتساب أسفل الصفحة (غير عائق) */
+        /* 2. زر واتساب شريطي في أسفل الصفحة */
         .bottom-whatsapp-bar {
             background-color: var(--whatsapp);
             text-align: center;
@@ -95,15 +95,53 @@
 
         .bottom-whatsapp-btn:hover { background: rgba(255, 255, 255, 0.3); }
 
+        /* 3. الأزرار العائمة المنفصلة (يمين وشمال) */
+        @keyframes pulseShake {
+            0%, 100% { transform: scale(1); }
+            20% { transform: scale(1.1) rotate(-4deg); }
+            40% { transform: scale(1.1) rotate(4deg); }
+            60% { transform: scale(1.1) rotate(-4deg); }
+            80% { transform: scale(1); }
+        }
+
+        .btn-float-single {
+            position: fixed;
+            bottom: 25px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 26px;
+            z-index: 1000;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+            animation: pulseShake 4s infinite ease-in-out;
+            transition: transform 0.2s ease;
+        }
+
+        /* زر الواتساب العائم على اليمين */
+        .whatsapp-float { right: 25px; background-color: var(--whatsapp); }
+
+        /* زر الاتصال العائم على اليسار */
+        .call-float { left: 25px; background-color: var(--call); }
+
+        .btn-float-single:hover { transform: scale(1.15); }
+
         @media (max-width: 600px) {
             header h1 { font-size: 1.6rem; }
             .section-card { padding: 20px; }
+            .btn-float-single { width: 52px; height: 52px; font-size: 22px; bottom: 20px; }
+            .whatsapp-float { right: 15px; }
+            .call-float { left: 15px; }
         }
     </style>
 </head>
 <body>
 
-    <!-- زر اتصال في أعلى الصفحة بدون عائق -->
+    <!-- 1. زر اتصال شريطي في أعلى الصفحة -->
     <div class="top-call-bar">
         <a href="tel:+966558900935" class="top-call-btn">
             <span>📞</span> اتصل بنا الآن مباشر: 966558900935+
@@ -175,12 +213,21 @@
 
     </div>
 
-    <!-- زر واتساب في نهاية الصفحة بدون أي عائق -->
+    <!-- 2. زر واتساب شريطي في أسفل الصفحة -->
     <div class="bottom-whatsapp-bar">
         <a href="https://wa.me/966558900935" class="bottom-whatsapp-btn" target="_blank">
             <span>💬</span> تواصل معنا فوراً عبر الواتساب
         </a>
     </div>
+
+    <!-- 3. الأزرار العائمة الثابتة (واتساب يمين + اتصال شمال) -->
+    <a href="https://wa.me/966558900935" class="btn-float-single whatsapp-float" target="_blank" title="واتساب">
+        💬
+    </a>
+
+    <a href="tel:+966558900935" class="btn-float-single call-float" title="اتصال">
+        📞
+    </a>
 
 </body>
 </html>
