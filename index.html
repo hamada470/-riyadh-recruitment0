@@ -17,7 +17,7 @@
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg-light); color: var(--text-dark); line-height: 1.8; padding-bottom: 100px; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg-light); color: var(--text-dark); line-height: 1.8; padding-bottom: 110px; }
 
         /* الهيدر الرئيسي */
         header { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); color: white; padding: 50px 20px; text-align: center; border-bottom: 4px solid var(--accent); }
@@ -27,7 +27,7 @@
         /* الحاوية الرئيسية */
         .container { max-width: 900px; margin: 30px auto; padding: 0 15px; }
 
-        /* انيميشن ظهــور الأقسام */
+        /* أنيميشن ظهور الأقسام */
         @keyframes fadeInUp {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
@@ -38,68 +38,67 @@
             border-radius: 16px;
             padding: 30px;
             margin-bottom: 25px;
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
             border: 1px solid #e2e8f0;
             animation: fadeInUp 0.6s ease-out forwards;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: transform 0.3s ease;
         }
 
-        .section-card:hover { transform: translateY(-3px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
+        .section-card:hover { transform: translateY(-3px); }
         .section-card h2 { color: var(--accent); font-size: 1.5rem; margin-bottom: 15px; padding-bottom: 10px; border-bottom: 2px solid #f1f5f9; display: flex; align-items: center; gap: 10px; }
         .section-card p { color: var(--text-muted); font-size: 0.98rem; text-align: justify; }
 
-        /* أنيميشن اهتزاز الأزرار العائمة */
+        /* أنيميشن اهتزاز الأزرار */
         @keyframes pulseShake {
-            0% { transform: scale(1); }
-            15% { transform: scale(1.03) rotate(-2deg); }
-            30% { transform: scale(1.03) rotate(2deg); }
-            45% { transform: scale(1.03) rotate(-2deg); }
-            60% { transform: scale(1); }
-            100% { transform: scale(1); }
+            0%, 100% { transform: scale(1); }
+            20% { transform: scale(1.08) rotate(-3deg); }
+            40% { transform: scale(1.08) rotate(3deg); }
+            60% { transform: scale(1.08) rotate(-3deg); }
+            80% { transform: scale(1); }
         }
 
+        /* حاوية الأزرار العائمة في المنتصف بالضبط */
         .floating-nav {
             position: fixed;
             bottom: 20px;
             left: 50%;
             transform: translateX(-50%);
-            width: 90%;
-            max-width: 500px;
             display: flex;
-            gap: 12px;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
             z-index: 1000;
             background: rgba(255, 255, 255, 0.85);
-            padding: 10px;
+            padding: 12px 25px;
             border-radius: 50px;
             backdrop-filter: blur(10px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
             animation: pulseShake 4s infinite ease-in-out;
         }
 
-        .btn-float {
-            flex: 1;
-            padding: 14px 20px;
-            border-radius: 40px;
+        /* الأزرار الدائرية المضبوطة */
+        .btn-float-circle {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
             color: white;
             text-decoration: none;
-            font-weight: 700;
-            font-size: 1rem;
-            text-align: center;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 8px;
-            transition: opacity 0.2s;
+            font-size: 24px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
 
-        .btn-float:active { opacity: 0.8; }
+        .btn-float-circle:hover { transform: scale(1.1); }
         .whatsapp { background-color: var(--whatsapp); }
         .call { background-color: var(--call); }
 
         @media (max-width: 600px) {
             header h1 { font-size: 1.6rem; }
             .section-card { padding: 20px; }
-            .btn-float { font-size: 0.9rem; padding: 12px; }
+            .btn-float-circle { width: 50px; height: 50px; font-size: 20px; }
         }
     </style>
 </head>
@@ -124,7 +123,7 @@
         <div class="section-card">
             <h2><span>👶</span> رعاية الأطفال والعناية الفائقة بكبار السن</h2>
             <p>
-                تُعد رعاية الأطفال وكبار السن من أهم الخدمات الحساسة التي نوليها اهتماماً استثنائياً في مكتبنا. نحن نعمل على توفير مربيات ومقدمات رعاية يمتلكن أعلى مستويات الرحمة، الصبر، والمسؤولية التامة. بالنسبة للأطفال، تحرص المربيات على العناية بنظافتهم الشخصية، ومساعدتهم في تناول الوجبات الغذائية المجهزة بعناية، ومتابعة أوقات نومهم، ومرافقتهم أثناء أوقات اللعب بأسلوب آمن يضمن سلامتهم البدنية والنفسية في كل لحظة. أما فيما يتعلق برعاية كبار السن، فإن كوادرنا تمتلك الخبرة الكافية لمساعدتهم في قضاء حوائجهم اليومية بكل يسر وسهولة، والمحافظة على تقديم المساعدة في تناول الأدوية بالفي المواعيد المحمية، والحرص الدائم على توفير جو نفسي مريح مليء بالاحترام والتقدير. تم اختيار هذه الفئة بعناية فائقة وتدريبها على التعامل مع الحالات والاحتياجات اليومية المختلفة بأسلوب هادئ وودود، مما يوفر لرب الأسرة الراحة والاطمئنان الكامل على أطفاله وآبائه طوال فترة تواجده خارج المنزل دون أي قلق.
+                تُعد رعاية الأطفال وكبار السن من أهم الخدمات الحساسة التي نوليها اهتماماً استثنائياً في مكتبنا. نحن نعمل على توفير مربيات ومقدمات رعاية يمتلكن أعلى مستويات الرحمة، الصبر، والمسؤولية التامة. بالنسبة للأطفال، تحرص المربيات على العناية بنظافتهم الشخصية، ومساعدتهم في تناول الوجبات الغذائية المجهزة بعناية، ومتابعة أوقات نومهم، ومرافقتهم أثناء أوقات اللعب بأسلوب آمن يضمن سلامتهم البدنية والنفسية في كل لحظة. أما فيما يتعلق برعاية كبار السن، فإن كوادرنا تمتلك الخبرة الكافية لمساعدتهم في قضاء حوائجهم اليومية بكل يسر وسهولة، والمحافظة على تقديم المساعدة في تناول الأدوية في المواعيد المحددة، والحرص الدائم على توفير جو نفسي مريح مليء بالاحترام والتقدير. تم اختيار هذه الفئة بعناية فائقة وتدريبها على التعامل مع الحالات والاحتياجات اليومية المختلفة بأسلوب هادئ وودود، مما يوفر لرب الأسرة الراحة والاطمئنان الكامل على أطفاله وآبائه طوال فترة تواجده خارج المنزل دون أي قلق.
             </p>
         </div>
 
@@ -156,19 +155,19 @@
         <div class="section-card">
             <h2><span>🤝</span> المتابعة المستمرة والدعم بعد وصول العاملة</h2>
             <p>
-                لا تنتهي مهمتنا بمجرد وصول العاملة إلى منزلك، بل تبدأ مرحلة جديدة من الرعاية والدعم الفني والمتابعة الدورية. يمتلك مكتبنا بالرياض قسماً خاصاً لخدمة العملاء يتابع أداء الكادر بشكل منتظم خلال فترة التجربة والأشهر الأولى لضمان التكيّف الكامل والتأكد من رضا العميل عن مستوى الخدمة المقدمة. وفي حال وجود أي صعوبات في التواصل أو اختلاف في وجهات النظر حول المهام المطلوبة، يتدخل فريقنا فوراً لإعادة توجيه العاملة أو تقديم النصائح والتوجيهات اللازمة باللغة المفهومة لها لتجاوز عقبة اللغة وحل المشكلة بسلاسة. علاوة على ذلك، نضمن لكم تطبيق كافة بندود العقود المبرمة وحماية كافة حقوقكم المالية والإدارية بمرونة تامة. إن هدفنا الأساسي ليس مجرد إتمام عملية استقدام واحدة، بل بناء شراك طويلة الأمد مع جميع عملائنا في مدينة الرياض قائمة على المصداقية والاحترافية وتقديم حلول مساندة متكاملة تجعل من بيتك مكاناً أكثر راحة ونظاماً.
+                لا تنتهي مهمتنا بمجرد وصول العاملة إلى منزلك، بل تبدأ مرحلة جديدة من الرعاية والدعم الفني والمتابعة الدورية. يمتلك مكتبنا بالرياض قسماً خاصاً لخدمة العملاء يتابع أداء الكادر بشكل منتظم خلال فترة التجربة والأشهر الأولى لضمان التكيّف الكامل والتأكد من رضا العميل عن مستوى الخدمة المقدمة. وفي حال وجود أي صعوبات في التواصل أو اختلاف في وجهات النظر حول المهام المطلوبة، يتدخل فريقنا فوراً لإعادة توجيه العاملة أو تقديم النصائح والتوجيهات اللازمة باللغة المفهومة لها لتجاوز عقبة اللغة وحل المشكلة بسلاسة. علاوة على ذلك، نضمن لكم تطبيق كافة بنود العقود المبرمة وحماية كافة حقوقكم المالية والإدارية بمرونة تامة. إن هدفنا الأساسي ليس مجرد إتمام عملية استقدام واحدة، بل بناء شراكة طويلة الأمد مع جميع عملائنا في مدينة الرياض قائمة على المصداقية والاحترافية وتقديم حلول مساندة متكاملة تجعل من بيتك مكاناً أكثر راحة ونظاماً.
             </p>
         </div>
 
     </div>
 
-    <!-- الأزرار العائمة بتصميم حديث واهتزاز جذاب -->
+    <!-- الأزرار العائمة الدائرية والمظبوطة في المنتصف تماماً -->
     <div class="floating-nav">
-        <a href="https://wa.me/966558900935" class="btn-float whatsapp" target="_blank">
-            <span>💬</span> واتساب مباشر
+        <a href="https://wa.me/966558900935" class="btn-float-circle whatsapp" target="_blank" title="واتساب">
+            💬
         </a>
-        <a href="tel:+966558900935" class="btn-float call">
-            <span>📞</span> اتصال تلفوني
+        <a href="tel:+966558900935" class="btn-float-circle call" title="اتصال">
+            📞
         </a>
     </div>
 
