@@ -30,13 +30,30 @@
 
         .section-btn-group { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top: 20px; }
         .section-btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; background-color: var(--call); color: white; padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 0.95rem; transition: 0.3s; }
-        .section-btn.whatsapp-btn { background-color: var(--whatsapp); }
         .section-btn:hover { opacity: 0.9; transform: translateY(-2px); }
 
-        .floating-container { position: fixed; bottom: 20px; left: 20px; right: 20px; display: flex; justify-content: space-between; z-index: 9999; pointer-events: none; }
-        .btn-float { pointer-events: auto; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.8rem; box-shadow: 0 4px 15px rgba(0,0,0,0.3); transition: 0.3s; text-decoration: none; }
-        .whatsapp { background-color: var(--whatsapp); }
-        .call { background-color: var(--call); }
+        /* زر الواتساب العائم في أسفل الشاشة */
+        .btn-float-whatsapp {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: var(--whatsapp);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            z-index: 9999;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .btn-float-whatsapp:hover {
+            transform: scale(1.1);
+        }
         
         @media (max-width: 600px) { 
             header h1 { font-size: 1.4rem; } 
@@ -46,7 +63,7 @@
 </head>
 <body>
 
-    <div class="top-call-bar">📞 اتصل بنا: <a href="tel:0532608760">0532608760</a> | واتساب: <a href="https://wa.me/966558900935">0558900935</a></div>
+    <div class="top-call-bar">📞 اتصل بنا: <a href="tel:0532608760">0532608760</a> | <a href="tel:0558900935">0558900935</a></div>
 
     <img src="IMG-20260817-WA0026.jpg" alt="شعار المكتب" class="logo-img">
 
@@ -64,7 +81,7 @@
             <p>نحن في مكتبنا نتميز بتقديم خدمات استقدام احترافية وشفافة. نساعدكم في اختيار الجنسية والمهارات التي تتوافق مع نمط حياة أسرتكم، مع تدقيق صارم للملفات الشخصية. نلتزم بكافة الضوابط القانونية لضمان حقوقكم.</p>
             <div class="section-btn-group">
                 <a href="tel:0532608760" class="section-btn"><i class="fa-solid fa-phone"></i> اتصل: 0532608760</a>
-                <a href="https://wa.me/966558900935" class="section-btn whatsapp-btn"><i class="fa-brands fa-whatsapp"></i> واتساب: 0558900935</a>
+                <a href="tel:0558900935" class="section-btn"><i class="fa-solid fa-phone"></i> اتصل: 0558900935</a>
             </div>
         </div>
 
@@ -75,7 +92,7 @@
             <p>النظافة هي سر الراحة في المنزل. خصصنا فريقاً مدرباً لعمليات التنظيف العميق والتعقيم، مع العناية بكافة تفاصيل الأثاث والمفروشات. نضمن لكم بيئة صحية ونظيفة تليق بأسرتكم، مع التزام تام بالمواعيد.</p>
             <div class="section-btn-group">
                 <a href="tel:0532608760" class="section-btn"><i class="fa-solid fa-phone"></i> اتصل: 0532608760</a>
-                <a href="https://wa.me/966558900935" class="section-btn whatsapp-btn"><i class="fa-brands fa-whatsapp"></i> واتساب: 0558900935</a>
+                <a href="tel:0558900935" class="section-btn"><i class="fa-solid fa-phone"></i> اتصل: 0558900935</a>
             </div>
         </div>
 
@@ -86,7 +103,7 @@
             <p>أطفالكم في أيدٍ أمينة. نختار جليسات يتمتعن بالصبر والحنان والمهارات التربوية. فريقنا مدرب على التعامل مع حالات الطوارئ وتنظيم جدول الطفل اليومي، مما يمنح الأبوين الطمأنينة الكاملة.</p>
             <div class="section-btn-group">
                 <a href="tel:0532608760" class="section-btn"><i class="fa-solid fa-phone"></i> اتصل: 0532608760</a>
-                <a href="https://wa.me/966558900935" class="section-btn whatsapp-btn"><i class="fa-brands fa-whatsapp"></i> واتساب: 0558900935</a>
+                <a href="tel:0558900935" class="section-btn"><i class="fa-solid fa-phone"></i> اتصل: 0558900935</a>
             </div>
         </div>
 
@@ -97,7 +114,7 @@
             <p>رعاية كبار السن تتطلب صبراً وحكمة. مساعدونا يقدمون العناية الجسدية والصحية مع توفير الرفقة الطيبة والدعم العاطفي. نحن الجسر الذي يربط بينكم وبين راحة والديكم بمهنية عالية.</p>
             <div class="section-btn-group">
                 <a href="tel:0532608760" class="section-btn"><i class="fa-solid fa-phone"></i> اتصل: 0532608760</a>
-                <a href="https://wa.me/966558900935" class="section-btn whatsapp-btn"><i class="fa-brands fa-whatsapp"></i> واتساب: 0558900935</a>
+                <a href="tel:0558900935" class="section-btn"><i class="fa-solid fa-phone"></i> اتصل: 0558900935</a>
             </div>
         </div>
 
@@ -108,19 +125,16 @@
             <p>الثقة هي عملتنا. عقودنا واضحة وشفافة وتخضع لأنظمة وزارة الموارد البشرية. نوفر ضمانات للاستبدال والتعويض، وفريقنا مستعد دائماً لحل أي استفسار بكل مهنية وسرعة.</p>
             <div class="section-btn-group">
                 <a href="tel:0532608760" class="section-btn"><i class="fa-solid fa-phone"></i> اتصل: 0532608760</a>
-                <a href="https://wa.me/966558900935" class="section-btn whatsapp-btn"><i class="fa-brands fa-whatsapp"></i> واتساب: 0558900935</a>
+                <a href="tel:0558900935" class="section-btn"><i class="fa-solid fa-phone"></i> اتصل: 0558900935</a>
             </div>
         </div>
 
     </div>
 
-    <!-- الأزرار العائمة -->
-    <div class="floating-container">
-        <!-- زر الاتصال بالرقم 60 -->
-        <a href="tel:0532608760" class="btn-float call" title="اتصل بنا"><i class="fa-solid fa-phone"></i></a>
-        <!-- زر الواتساب بالرقم 35 -->
-        <a href="https://wa.me/966558900935" class="btn-float whatsapp" target="_blank" title="واتساب"><i class="fa-brands fa-whatsapp"></i></a>
-    </div>
+    <!-- أيقونة الواتساب العائمة الوحيدة أسفل الشاشة (مربوطة بالرقم 60) -->
+    <a href="https://wa.me/966532608760" class="btn-float-whatsapp" target="_blank" title="تواصل عبر الواتساب">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
 </body>
 </html>
