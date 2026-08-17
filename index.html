@@ -31,12 +31,28 @@
         header h1 { font-size: 2.2rem; margin-bottom: 10px; font-weight: 800; }
         header p { font-size: 1.1rem; opacity: 0.9; max-width: 750px; margin: 0 auto; }
 
+        /* تنسيق شعار مساند */
+        .musaned-logo {
+            max-width: 260px;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px auto;
+            background: #ffffff;
+            padding: 10px 18px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .footer-logo-container {
+            text-align: center;
+            margin: 30px 0 10px 0;
+        }
+
         .container { max-width: 950px; margin: 30px auto; padding: 0 15px; }
         .section-card { background: var(--card-bg); border-radius: 16px; padding: 25px; margin-bottom: 25px; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05); border: 1px solid #e2e8f0; }
         .section-card h2 { color: var(--accent); font-size: 1.4rem; margin-bottom: 15px; padding-bottom: 10px; border-bottom: 2px solid #f1f5f9; display: flex; align-items: center; gap: 10px; }
         .section-card p { color: var(--text-muted); font-size: 1rem; text-align: justify; margin-bottom: 15px; }
 
-        .bottom-whatsapp-bar { background-color: var(--whatsapp); text-align: center; padding: 18px 20px; margin-top: 40px; }
+        .bottom-whatsapp-bar { background-color: var(--whatsapp); text-align: center; padding: 18px 20px; margin-top: 20px; }
         .bottom-whatsapp-btn { color: white; text-decoration: none; font-weight: bold; font-size: 1.1rem; display: inline-flex; align-items: center; justify-content: center; gap: 10px; width: 100%; max-width: 450px; background: rgba(255, 255, 255, 0.2); padding: 12px 20px; border-radius: 50px; }
 
         /* الأزرار العائمة */
@@ -48,6 +64,7 @@
 
         @media (max-width: 600px) {
             header h1 { font-size: 1.6rem; }
+            .musaned-logo { max-width: 200px; }
             .btn-float { width: 54px; height: 54px; }
             .btn-float svg { width: 28px; height: 28px; }
         }
@@ -68,6 +85,8 @@
     </div>
 
     <header>
+        <!-- صورة مساند أعلى الصفحة -->
+        <img src="images.png" alt="شعار مساند المنصة الوطنية لخدمات العمالة المنزلية" class="musaned-logo">
         <h1>مكتب استقدام عمالة منزلية بالرياض</h1>
         <p>نحن نوفر لكم أسرع وأفضل خدمات الاستقدام المعتمدة بالرياض بكفاءة عالية وضمان شامل. يسعدنا استقبال اتصالاتكم واستفساراتكم لخدمتكم فوراً.</p>
     </header>
@@ -136,7 +155,7 @@
                 يساعدك وجود مربية أطفال متخصصة في التركيز على أعمالك اليومية وأنت مطمئن تماماً على طفلك الصغير.<br>
                 نستمع جيداً لتفاصيل طلبك لنرشح لك العاملة الأنسب التي تمتلك الحنان والخبرة اللازمة للتعامل مع طفلك.<br>
                 جميع السير الذاتية المتاحة لدينا تم فحصها بعناية لضمان أعلى مستويات الأمان والأمانة في التعامل مع الأطفال.<br>
-                للمزيد من الاستفسارات واختيار العاملة الأنسب لرعاية أطفالك تواصل معنا فوراً.
+                للمزيد من الاستفسارات وااختيار العاملة الأنسب لرعاية أطفالك تواصل معنا فوراً.
             </p>
             <div style="text-align: center; margin-top: 15px;">
                 <a href="tel:0532608760" class="static-btn">📞 اتصل: 0532608760</a>
@@ -212,6 +231,11 @@
             <p style="margin-bottom: 10px; font-weight: bold;">📞 لا تتردد في الاتصال بنا مباشرة:</p>
             <a href="tel:0532608760" class="static-btn">📞 الرقم الأول: 0532608760</a>
             <a href="tel:+966558900935" class="static-btn">📞 الرقم الثاني: 966558900935+</a>
+        </div>
+
+        <!-- صورة مساند أسفل الصفحة -->
+        <div class="footer-logo-container">
+            <img src="images.png" alt="شعار مساند المنصة الوطنية لخدمات العمالة المنزلية" class="musaned-logo">
         </div>
 
     </div>
