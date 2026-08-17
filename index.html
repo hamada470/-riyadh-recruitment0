@@ -32,28 +32,36 @@
         .section-btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; background-color: var(--call); color: white; padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 0.95rem; transition: 0.3s; }
         .section-btn:hover { opacity: 0.9; transform: translateY(-2px); }
 
-        /* زر الواتساب العائم في أسفل الشاشة */
-        .btn-float-whatsapp {
-            position: fixed;
-            bottom: 20px;
-            left: 20px;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            background-color: var(--whatsapp);
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2rem;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-            z-index: 9999;
-            text-decoration: none;
-            transition: 0.3s;
+        /* الأزرار العائمة أسفل الشاشة */
+        .floating-container { 
+            position: fixed; 
+            bottom: 20px; 
+            left: 20px; 
+            right: 20px; 
+            display: flex; 
+            justify-content: space-between; 
+            z-index: 9999; 
+            pointer-events: none; 
         }
-        .btn-float-whatsapp:hover {
+        .btn-float { 
+            pointer-events: auto; 
+            width: 60px; 
+            height: 60px; 
+            border-radius: 50%; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            color: white; 
+            font-size: 1.8rem; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3); 
+            transition: 0.3s; 
+            text-decoration: none; 
+        }
+        .btn-float:hover {
             transform: scale(1.1);
         }
+        .whatsapp { background-color: var(--whatsapp); }
+        .call { background-color: var(--call); }
         
         @media (max-width: 600px) { 
             header h1 { font-size: 1.4rem; } 
@@ -131,10 +139,17 @@
 
     </div>
 
-    <!-- أيقونة الواتساب العائمة الوحيدة أسفل الشاشة (مربوطة بالرقم 60) -->
-    <a href="https://wa.me/966532608760" class="btn-float-whatsapp" target="_blank" title="تواصل عبر الواتساب">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
+    <!-- الأزرار العائمة أسفل الشاشة -->
+    <div class="floating-container">
+        <!-- زر اتصال بالرقم المنتهي بـ 60 -->
+        <a href="tel:0532608760" class="btn-float call" title="اتصل بنا 0532608760">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+        <!-- زر واتساب بالرقم المنتهي بـ 60 -->
+        <a href="https://wa.me/966532608760" class="btn-float whatsapp" target="_blank" title="واتساب 0532608760">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
 
 </body>
 </html>
