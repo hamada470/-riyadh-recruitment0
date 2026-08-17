@@ -17,42 +17,40 @@
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg-light); color: var(--text-dark); line-height: 2; padding-bottom: 90px; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg-light); color: var(--text-dark); line-height: 1.8; padding-bottom: 100px; }
 
         /* الشعار 90% */
-        .logo-img { width: 90%; max-width: 400px; height: auto; display: block; margin: 20px auto; }
+        .logo-img { width: 90%; max-width: 400px; height: auto; display: block; margin: 25px auto; border-radius: 10px; }
 
-        .top-call-bar { background-color: var(--call); text-align: center; padding: 12px; }
-        .top-call-btn { color: white; text-decoration: none; font-weight: bold; font-size: 1.05rem; }
+        .top-call-bar { background-color: var(--call); text-align: center; padding: 15px; color: white; font-weight: bold; }
+        
+        .static-call-section { text-align: center; padding: 20px 10px; background: #fff; margin: 15px 0; border: 2px dashed #e2e8f0; }
+        .static-btn { display: inline-block; background-color: var(--call); color: white; padding: 12px 25px; border-radius: 8px; text-decoration: none; font-weight: bold; margin: 5px; }
 
-        .static-call-section { text-align: center; padding: 20px 10px; background: #fff; margin: 15px 0; border-top: 2px dashed #e2e8f0; border-bottom: 2px dashed #e2e8f0; }
-        .static-btn { display: inline-block; background-color: var(--call); color: white; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: bold; margin: 5px; transition: 0.3s; font-size: 0.95rem; }
-        .static-btn:hover { opacity: 0.9; }
+        header { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); color: white; padding: 40px 20px; text-align: center; }
+        .container { max-width: 950px; margin: 20px auto; padding: 0 15px; }
+        .section-card { background: var(--card-bg); border-radius: 16px; padding: 30px; margin-bottom: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .section-card h2 { color: var(--accent); margin-bottom: 15px; border-bottom: 2px solid #f1f5f9; padding-bottom: 10px; }
+        .section-card p { color: var(--text-muted); text-align: justify; }
 
-        header { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); color: white; padding: 40px 20px; text-align: center; border-bottom: 4px solid var(--accent); }
-        .container { max-width: 950px; margin: 30px auto; padding: 0 15px; }
-        .section-card { background: var(--card-bg); border-radius: 16px; padding: 25px; margin-bottom: 25px; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05); border: 1px solid #e2e8f0; }
-        .section-card h2 { color: var(--accent); font-size: 1.4rem; margin-bottom: 15px; }
+        .bottom-whatsapp-bar { background-color: var(--whatsapp); text-align: center; padding: 20px; }
+        .bottom-whatsapp-btn { color: white; text-decoration: none; font-weight: bold; font-size: 1.2rem; }
 
-        .bottom-whatsapp-bar { background-color: var(--whatsapp); text-align: center; padding: 18px 20px; margin-top: 40px; }
-        .bottom-whatsapp-btn { color: white; text-decoration: none; font-weight: bold; font-size: 1.1rem; }
-
-        .btn-float { position: fixed; bottom: 20px; width: 60px; height: 60px; border-radius: 50%; color: white; display: flex; align-items: center; justify-content: center; z-index: 1000; box-shadow: 0 10px 25px rgba(0,0,0,0.25); }
-        .float-whatsapp { right: 20px; background-color: #25d366; }
-        .float-call { left: 20px; background-color: var(--call); }
+        .btn-float { position: fixed; bottom: 25px; width: 60px; height: 60px; border-radius: 50%; color: white; display: flex; align-items: center; justify-content: center; z-index: 1000; box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+        .float-whatsapp { right: 25px; background-color: #25d366; }
+        .float-call { left: 25px; background-color: var(--call); }
     </style>
 </head>
 <body>
 
-    <div class="top-call-bar">
-        <a href="tel:0532608760" class="top-call-btn">📞 اتصل بنا الآن: 0532608760</a>
-    </div>
+    <div class="top-call-bar">📞 اتصل بنا الآن لخدمات الاستقدام: 0532608760</div>
 
-    <!-- الشعار العلوي -->
-    <img src="https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Musaned_Logo.png/800px-Musaned_Logo.png" alt="مساند" class="logo-img">
+    <!-- الشعار العلوي (تأكد من رفع صورة باسم logo.jpg على GitHub) -->
+    <img src="logo.jpg" alt="شعار مساند" class="logo-img" onerror="this.style.display='none'">
 
     <div class="static-call-section">
-        <a href="tel:0532608760" class="static-btn">📞 اتصل: 0532608760</a>
+        <p style="font-weight: bold; margin-bottom: 10px;">للتواصل الفوري معنا:</p>
+        <a href="tel:0532608760" class="static-btn">اتصل الآن: 0532608760</a>
     </div>
 
     <header>
@@ -60,22 +58,47 @@
     </header>
 
     <div class="container">
-        <!-- الأقسام الستة -->
-        <div class="section-card"><h2>📋 خدمات الاستقدام</h2><p>خدمات استقدام فورية ومعتمدة في الرياض.</p></div>
-        <div class="section-card"><h2>🧹 التنظيف</h2><p>عمالة منزلية متخصصة في التنظيف الشامل.</p></div>
-        <div class="section-card"><h2>👶 رعاية الأطفال</h2><p>مربيات ذوات خبرة في رعاية الأطفال.</p></div>
-        <div class="section-card"><h2>👵 رعاية كبار السن</h2><p>عناية متميزة ورحيمة لكبار السن.</p></div>
-        <div class="section-card"><h2>🍳 الطبخ</h2><p>طباخات محترفات في المأكولات العربية.</p></div>
-        <div class="section-card"><h2>🛡️ الضمانات</h2><p>عقود نظامية وضمان شامل للحقوق.</p></div>
+        
+        <div class="section-card">
+            <h2>📋 خدمات الاستقدام الفوري</h2>
+            <p>يقدم مكتبنا حلولاً متكاملة لاستقدام العمالة المنزلية من مختلف الجنسيات بخبرة تفوق السنوات. نحن نعتمد على استراتيجية دقيقة تضمن اختيار أفضل الكوادر المهنية والمدربة بعناية فائقة لتلبية احتياجات الأسرة السعودية. تبدأ خدماتنا بتقديم استشارات متخصصة حول الجنسيات والمهارات المطلوبة، مروراً بإنهاء كافة الإجراءات القانونية والتعاقدية بمرونة تامة. نتميز بالسرعة في الإنجاز والشفافية في التعامل، حيث نحرص على تقديم عمالة تم فحصها وتدريبها لضمان التأقلم مع نظام الحياة في المملكة. فريقنا يعمل على مدار الساعة لضمان وصول العمالة في الوقت المحدد وبكفاءة عالية تضمن رضا العملاء التام عن جودة الخدمات المقدمة.</p>
+        </div>
+
+        <div class="section-card">
+            <h2>🧹 خدمات التنظيف العميق</h2>
+            <p>نحن نوفر عمالة منزلية محترفة متخصصة في أعمال التنظيف العميق والشامل لجميع زوايا المنزل بأحدث المعدات. يدرك فريقنا أهمية النظافة الصحية للمنزل، لذا نركز على استخدام مواد آمنة وغير ضارة تضمن بيئة صحية للأطفال وكبار السن. تشمل خدماتنا تنظيف السجاد، الستائر، المطابخ، وتعقيم الحمامات بشكل دوري ودقيق. نضمن لك دقة في المواعيد والتزاماً بأعلى معايير الجودة والنظافة العالمية، مما يوفر لك وقتاً ثميناً وراحة بال تامة. يتم تدريب عاملاتنا على استخدام أفضل التقنيات في التنظيف، مع التركيز على التفاصيل التي تجعل منزلك يبدو في أبهى صورة دائماً. ثق بخدماتنا لتجعل بيتك مكاناً أكثر راحة ونظافة.</p>
+        </div>
+
+        <div class="section-card">
+            <h2>👶 رعاية الأطفال</h2>
+            <p>نحن ندرك تماماً أن سلامة أطفالكم هي أولويتنا القصوى، لذلك نوفر جليسات أطفال مدربات على أعلى مستوى من الصبر، الأمانة، والخبرة التربوية. تتمتع موظفاتنا بالقدرة على التعامل مع الأطفال من مختلف الأعمار، مع التركيز على أنشطة تعليمية وترفيهية مفيدة تنمي مهاراتهم الإبداعية والذهنية. نحرص على إجراء فحص دقيق وشامل لجميع العاملات قبل توظيفهن لضمان الأمانة والالتزام المهني المطلق. توفر جليساتنا بيئة داعمة ومحبة تساعد الطفل على الشعور بالأمان، كما يلتزمن بتنفيذ روتين يومي يشمل التغذية السليمة والأنشطة التفاعلية. نحن هنا لنمنحكم الراحة والطمأنينة أثناء تواجدكم خارج المنزل، مع العلم أن أطفالكم في أيدٍ أمينة وخبيرة تعتني بكل تفاصيل حياتهم اليومية.</p>
+        </div>
+
+        <div class="section-card">
+            <h2>👵 رعاية كبار السن</h2>
+            <p>نقدم خدمات رعاية متخصصة ومتميزة لكبار السن تتسم بالصبر، الرفق، والاحترام الشديد لخصوصيتهم واحتياجاتهم. تتفهم عاملاتنا طبيعة الرعاية الصحية والنفسية التي يحتاجها كبار السن، حيث يتم تدريبهن على المساعدة في الأنشطة اليومية، متابعة الأدوية في مواعيدها بدقة، وتوفير الصحبة الآمنة والمريحة. نحن لا نقدم مجرد مساعدة منزلية، بل نقدم رعاية شاملة تضمن كرامة وراحة المسن داخل منزله، مع تعزيز الشعور بالثقة والسعادة. نحرص على اختيار موظفات ذوات خلفية أخلاقية قوية، يمتلكن القدرة على الاستماع والاهتمام بتفاصيل الحالة الصحية والنفسية للمسنين. هدفنا هو تخفيف الأعباء عن الأسرة مع ضمان جودة حياة استثنائية لمن يحتاجون إلى العناية الخاصة، لنكون السند والدعم الذي تحتاجونه دائماً في رعاية أحبائكم.</p>
+        </div>
+
+        <div class="section-card">
+            <h2>🍳 خدمات الطبخ</h2>
+            <p>تتميز طباخاتنا بقدرتهن العالية على إعداد أشهى الأطباق الشرقية والعالمية بلمسة منزلية مميزة تناسب ذوق عائلتك. نركز في اختيارنا للطباخات على الخبرة الطويلة، النظافة الشخصية، والقدرة على ابتكار قوائم طعام صحية ومتنوعة تلبي رغبات جميع أفراد الأسرة. نحن ندرك أن المطبخ هو قلب المنزل، لذا نضمن وصول عمالة تمتلك ذوقاً رفيعاً في التقديم ومهارة عالية في إدارة المطبخ وتنظيمه. سواء كنت تبحث عن طباخة للوجبات اليومية العادية أو للمناسبات والعزائم الخاصة، فإن موظفاتنا على أتم الاستعداد لتقديم الأفضل دائماً. يتم الالتزام الصارم بمعايير النظافة والسلامة الغذائية في جميع مراحل التحضير، لضمان تقديم وجبات شهية، طازجة، ومفيدة لصحة عائلتك، مع الحفاظ على التوازن الغذائي المطلوب لكل فرد.</p>
+        </div>
+
+        <div class="section-card">
+            <h2>🛡️ الضمانات والحقوق</h2>
+            <p>نؤمن في مكتبنا بأن الثقة المتبادلة هي أساس نجاح العلاقة بين المكتب والعميل، لذا نوفر عقوداً واضحة وشفافة تحفظ حقوق جميع الأطراف. نلتزم بكافة الأنظمة واللوائح الصادرة عن الجهات الرسمية في المملكة العربية السعودية لضمان استقدام نظامي وقانوني يحمي حقوق العميل والعاملة معاً. ضماناتنا تشمل فترة تجربة كافية لتقييم أداء العاملة ومدى ملاءمتها لاحتياجات أسرتك، مع وجود سياسات واضحة للاستبدال أو التعويض في حال عدم الرضا أو وجود أي خلل. نحن نعتبر أنفسنا مسؤولين عن توفير الدعم والمشورة طوال فترة التعاقد، ونعمل على حل أي ملاحظات أو شكاوى بسرعة ومهنية عالية. هدفنا هو بناء علاقة طويلة الأمد مع عملائنا مبنية على المصداقية، الوضوح، والالتزام بتقديم خدمات تفوق التوقعات دائماً.</p>
+        </div>
+
     </div>
 
     <!-- الشعار السفلي -->
-    <img src="https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Musaned_Logo.png/800px-Musaned_Logo.png" alt="مساند" class="logo-img">
+    <img src="logo.jpg" alt="شعار مساند" class="logo-img" onerror="this.style.display='none'">
 
     <div class="bottom-whatsapp-bar">
-        <a href="https://wa.me/966532608760" class="bottom-whatsapp-btn">💬 تواصل معنا عبر الواتساب</a>
+        <a href="https://wa.me/966532608760" class="bottom-whatsapp-btn">💬 تواصل معنا عبر الواتساب فوراً</a>
     </div>
 
+    <!-- الأزرار العائمة -->
     <a href="https://wa.me/966532608760" class="btn-float float-whatsapp">💬</a>
     <a href="tel:0532608760" class="btn-float float-call">📞</a>
 
