@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>مكتب استقدام عمالة منزلية بالرياض | خدمات استقدام متميزة</title>
-    <meta name="description" content="أفضل مكتب استقدام عمالة منزلية بالرياض. نوفر خادمات وطباخات وعاملات رعاية كبار السن والأطفال بأعلى كفاءة وأسرع إنجاز.">
     <style>
         :root {
             --primary: #0f172a;
@@ -20,102 +19,65 @@
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg-light); color: var(--text-dark); line-height: 2; padding-bottom: 90px; }
 
-        .logo-img { max-width: 150px; height: auto; display: block; margin: 0 auto 15px auto; background: white; padding: 10px; border-radius: 10px; }
+        /* الشعار 90% */
+        .logo-img { width: 90%; max-width: 400px; height: auto; display: block; margin: 20px auto; }
 
         .top-call-bar { background-color: var(--call); text-align: center; padding: 12px; }
-        .top-call-btn { color: white; text-decoration: none; font-weight: bold; font-size: 1.05rem; display: inline-flex; align-items: center; gap: 8px; }
+        .top-call-btn { color: white; text-decoration: none; font-weight: bold; font-size: 1.05rem; }
 
         .static-call-section { text-align: center; padding: 20px 10px; background: #fff; margin: 15px 0; border-top: 2px dashed #e2e8f0; border-bottom: 2px dashed #e2e8f0; }
-        .static-btn { display: inline-block; background-color: var(--call); color: white; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: bold; margin: 5px; transition: 0.3s; box-shadow: 0 2px 5px rgba(0,0,0,0.1); font-size: 0.95rem; }
-        .static-btn:hover { opacity: 0.95; transform: translateY(-1px); }
+        .static-btn { display: inline-block; background-color: var(--call); color: white; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: bold; margin: 5px; transition: 0.3s; font-size: 0.95rem; }
+        .static-btn:hover { opacity: 0.9; }
 
         header { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); color: white; padding: 40px 20px; text-align: center; border-bottom: 4px solid var(--accent); }
-        header h1 { font-size: 2.2rem; margin-bottom: 10px; font-weight: 800; }
-        header p { font-size: 1.1rem; opacity: 0.9; max-width: 750px; margin: 0 auto; }
-
         .container { max-width: 950px; margin: 30px auto; padding: 0 15px; }
         .section-card { background: var(--card-bg); border-radius: 16px; padding: 25px; margin-bottom: 25px; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05); border: 1px solid #e2e8f0; }
-        .section-card h2 { color: var(--accent); font-size: 1.4rem; margin-bottom: 15px; padding-bottom: 10px; border-bottom: 2px solid #f1f5f9; display: flex; align-items: center; gap: 10px; }
-        .section-card p { color: var(--text-muted); font-size: 1rem; text-align: justify; margin-bottom: 15px; }
+        .section-card h2 { color: var(--accent); font-size: 1.4rem; margin-bottom: 15px; }
 
-        .bottom-logo-section { text-align: center; margin-top: 40px; padding: 20px; }
-        
-        .bottom-whatsapp-bar { background-color: var(--whatsapp); text-align: center; padding: 18px 20px; margin-top: 20px; }
-        .bottom-whatsapp-btn { color: white; text-decoration: none; font-weight: bold; font-size: 1.1rem; display: inline-flex; align-items: center; justify-content: center; gap: 10px; width: 100%; max-width: 450px; background: rgba(255, 255, 255, 0.2); padding: 12px 20px; border-radius: 50px; }
+        .bottom-whatsapp-bar { background-color: var(--whatsapp); text-align: center; padding: 18px 20px; margin-top: 40px; }
+        .bottom-whatsapp-btn { color: white; text-decoration: none; font-weight: bold; font-size: 1.1rem; }
 
-        /* الأزرار العائمة */
-        .btn-float { position: fixed; bottom: 20px; width: 60px; height: 60px; border-radius: 50%; color: white; text-decoration: none; display: flex; align-items: center; justify-content: center; z-index: 1000; box-shadow: 0 10px 25px rgba(0,0,0,0.25); transition: 0.3s; }
-        .btn-float:hover { transform: scale(1.08); }
-        .btn-float svg { width: 32px; height: 32px; fill: currentColor; }
+        .btn-float { position: fixed; bottom: 20px; width: 60px; height: 60px; border-radius: 50%; color: white; display: flex; align-items: center; justify-content: center; z-index: 1000; box-shadow: 0 10px 25px rgba(0,0,0,0.25); }
         .float-whatsapp { right: 20px; background-color: #25d366; }
         .float-call { left: 20px; background-color: var(--call); }
-
-        @media (max-width: 600px) {
-            header h1 { font-size: 1.6rem; }
-            .btn-float { width: 54px; height: 54px; }
-            .btn-float svg { width: 28px; height: 28px; }
-        }
     </style>
 </head>
 <body>
 
-    <!-- شريط الاتصال العلوي -->
     <div class="top-call-bar">
         <a href="tel:0532608760" class="top-call-btn">📞 اتصل بنا الآن: 0532608760</a>
     </div>
 
-    <!-- أزرار الاتصال الثابتة علوية -->
+    <!-- الشعار العلوي -->
+    <img src="https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Musaned_Logo.png/800px-Musaned_Logo.png" alt="مساند" class="logo-img">
+
     <div class="static-call-section">
-        <p style="margin-bottom: 10px; font-weight: bold;">📞 للتواصل الفوري معنا وحجز العمالة المنزلية:</p>
         <a href="tel:0532608760" class="static-btn">📞 اتصل: 0532608760</a>
-        <a href="tel:+966558900935" class="static-btn">📞 اتصل: 966558900935+</a>
     </div>
 
     <header>
-        <!-- الشعار في الأعلى -->
-        <img src="1000008768.jpg" alt="شعار مساند" class="logo-img">
         <h1>مكتب استقدام عمالة منزلية بالرياض</h1>
-        <p>نحن نوفر لكم أسرع وأفضل خدمات الاستقدام المعتمدة بالرياض بكفاءة عالية وضمان شامل.</p>
     </header>
 
     <div class="container">
-
-        <!-- القسم الأول -->
-        <div class="section-card">
-            <h2><span>📋</span> القسم الأول: خدمات الاستقدام الفوري والمعتمد بالرياض</h2>
-            <p>
-                يعتبر مكتبنا بالرياض من الأماكن المعتمدة والرائدة في تقديم كافة خدمات استقدام العمالة المنزلية بكل احترافية.<br>
-                نحرص على توفير إجراءات مرنة وسريعة تضمن وصول العاملة المنزلية في أسرع وقت ممكن وبأقل التكاليف المتاحة.
-            </p>
-            <div style="text-align: center; margin-top: 15px;">
-                <a href="tel:0532608760" class="static-btn">📞 اتصل: 0532608760</a>
-            </div>
-        </div>
-
-        <!-- باقي الأقسام هنا كما كانت في الكود السابق -->
-        
+        <!-- الأقسام الستة -->
+        <div class="section-card"><h2>📋 خدمات الاستقدام</h2><p>خدمات استقدام فورية ومعتمدة في الرياض.</p></div>
+        <div class="section-card"><h2>🧹 التنظيف</h2><p>عمالة منزلية متخصصة في التنظيف الشامل.</p></div>
+        <div class="section-card"><h2>👶 رعاية الأطفال</h2><p>مربيات ذوات خبرة في رعاية الأطفال.</p></div>
+        <div class="section-card"><h2>👵 رعاية كبار السن</h2><p>عناية متميزة ورحيمة لكبار السن.</p></div>
+        <div class="section-card"><h2>🍳 الطبخ</h2><p>طباخات محترفات في المأكولات العربية.</p></div>
+        <div class="section-card"><h2>🛡️ الضمانات</h2><p>عقود نظامية وضمان شامل للحقوق.</p></div>
     </div>
 
-    <!-- الشعار في الأسفل -->
-    <div class="bottom-logo-section">
-        <img src="1000008768.jpg" alt="شعار مساند" class="logo-img" style="max-width: 120px;">
-    </div>
+    <!-- الشعار السفلي -->
+    <img src="https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Musaned_Logo.png/800px-Musaned_Logo.png" alt="مساند" class="logo-img">
 
-    <!-- شريط الواتساب السفلي -->
     <div class="bottom-whatsapp-bar">
-        <a href="https://wa.me/966532608760" class="bottom-whatsapp-btn" target="_blank">
-            💬 تواصل معنا فوراً عبر الواتساب
-        </a>
+        <a href="https://wa.me/966532608760" class="bottom-whatsapp-btn">💬 تواصل معنا عبر الواتساب</a>
     </div>
 
-    <!-- الأزرار العائمة -->
-    <a href="https://wa.me/966558900935" class="btn-float float-whatsapp" target="_blank">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3 18.6-68.1-4.4-6.9c-18.6-29.5-28.4-63.3-28.4-98 0-101.3 82.5-183.8 183.8-183.8 49 0 95.1 19.1 129.7 53.7 34.6 34.6 53.7 80.7 53.7 129.7 0 101.4-82.5 183.9-183.8 183.9zm101-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" fill="white"/></svg>
-    </a>
-
-    <a href="tel:+966558900935" class="btn-float float-call">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 400C231.8 362 150 280.2 112 207.3l31.1-40.8c13.7-11.1 18.4-30 11.6-46.3l-40-96z" fill="white"/></svg>
-    </a>
+    <a href="https://wa.me/966532608760" class="btn-float float-whatsapp">💬</a>
+    <a href="tel:0532608760" class="btn-float float-call">📞</a>
 
 </body>
 </html>
