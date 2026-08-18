@@ -32,7 +32,7 @@
         .section-btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; background-color: var(--call); color: white; padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 0.95rem; transition: 0.3s; }
         .section-btn:hover { opacity: 0.9; transform: translateY(-2px); }
 
-        /* تصميم الشعار العائم بشكل مستطيل واضح لعرض النص بدقة */
+        /* تصميم الشعار العائم المستطيل في الأعلى */
         .floating-top-logo {
             position: fixed;
             top: 10px;
@@ -45,10 +45,10 @@
         }
 
         .floating-top-logo img {
-            width: 140px; /* عرض المستطيل */
-            height: 70px; /* ارتفاع المستطيل */
-            border-radius: 10px; /* حواف منسقة وأنيقة */
-            object-fit: contain; /* لضمان ظهور الشعار كاملاً دون قص النص داخله */
+            width: 140px;
+            height: 70px;
+            border-radius: 10px;
+            object-fit: contain;
             border: 2px solid #ffffff;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -61,28 +61,34 @@
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
         }
 
-        /* الأزرار العائمة أسفل الشاشة */
+        /* الأزرار العائمة أسفل الشاشة (4 أزرار: اتصال يمين، واتساب يسار) */
         .floating-container { 
             position: fixed; 
             bottom: 20px; 
             left: 20px; 
             right: 20px; 
             display: flex; 
-            justify-content: flex-end; 
-            gap: 15px;
+            justify-content: space-between; 
+            align-items: center;
             z-index: 9999; 
             pointer-events: none; 
         }
+
+        .floating-group {
+            display: flex;
+            gap: 12px;
+            pointer-events: auto;
+        }
+
         .btn-float { 
-            pointer-events: auto; 
-            width: 60px; 
-            height: 60px; 
+            width: 55px; 
+            height: 55px; 
             border-radius: 50%; 
             display: flex; 
             align-items: center; 
             justify-content: center; 
             color: white; 
-            font-size: 1.8rem; 
+            font-size: 1.6rem; 
             box-shadow: 0 4px 15px rgba(0,0,0,0.3); 
             transition: 0.3s; 
             text-decoration: none; 
@@ -96,8 +102,9 @@
         @media (max-width: 600px) { 
             header h1 { font-size: 1.4rem; } 
             .section-btn { width: 100%; }
-            .floating-container { justify-content: space-around; gap: 0; }
-            .floating-top-logo img { width: 110px; height: 55px; } /* حجم مستطيل متناسق مع شاشات الجوالات الصغيرة */
+            .floating-top-logo img { width: 110px; height: 55px; }
+            .btn-float { width: 50px; height: 50px; font-size: 1.4rem; }
+            .floating-group { gap: 8px; }
         }
     </style>
 </head>
@@ -176,20 +183,27 @@
 
     </div>
 
-    <!-- الأزرار العائمة أسفل الشاشة (اتصال + واتساب 60 + واتساب 35) -->
+    <!-- الأزرار العائمة أسفل الشاشة (أزرار الاتصال على اليمين وأزرار الواتساب على اليسار) -->
     <div class="floating-container">
-        <!-- زر اتصال بالرقم 60 -->
-        <a href="tel:0532608760" class="btn-float call" title="اتصل بنا 0532608760">
-            <i class="fa-solid fa-phone"></i>
-        </a>
-        <!-- زر واتساب بالرقم 60 -->
-        <a href="https://wa.me/966532608760" class="btn-float whatsapp" target="_blank" title="واتساب 0532608760">
-            <i class="fa-brands fa-whatsapp"></i>
-        </a>
-        <!-- زر واتساب بالرقم 35 -->
-        <a href="https://wa.me/966558900935" class="btn-float whatsapp" target="_blank" title="واتساب 0558900935">
-            <i class="fa-brands fa-whatsapp"></i>
-        </a>
+        <!-- مجموعة أزرار الاتصال (على اليمين) -->
+        <div class="floating-group">
+            <a href="tel:0532608760" class="btn-float call" title="اتصل بالرقم 0532608760">
+                <i class="fa-solid fa-phone"></i>
+            </a>
+            <a href="tel:0558900935" class="btn-float call" title="اتصل بالرقم 0558900935">
+                <i class="fa-solid fa-phone"></i>
+            </a>
+        </div>
+
+        <!-- مجموعة أزرار الواتساب (على اليسار) -->
+        <div class="floating-group">
+            <a href="https://wa.me/966532608760" class="btn-float whatsapp" target="_blank" title="واتساب 0532608760">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://wa.me/966558900935" class="btn-float whatsapp" target="_blank" title="واتساب 0558900935">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
     </div>
 
 </body>
