@@ -12,7 +12,7 @@
             --text-dark: #1e293b; --text-muted: #475569;
         }
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg-light); color: var(--text-dark); line-height: 1.8; padding-bottom: 120px; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg-light); color: var(--text-dark); line-height: 1.8; padding-bottom: 140px; }
         
         .logo-img { width: 90%; max-width: 400px; height: auto; display: block; margin: 20px auto; border-radius: 10px; }
         .top-call-bar { background-color: var(--call); text-align: center; padding: 12px; color: white; font-weight: bold; }
@@ -61,7 +61,7 @@
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
         }
 
-        /* الأزرار العائمة أسفل الشاشة */
+        /* الأزرار العائمة أسفل الشاشة (بحجم أكبر وترتيب عمودي: واتساب فوق الاتصال) */
         .floating-container { 
             position: fixed; 
             bottom: 20px; 
@@ -69,26 +69,27 @@
             right: 20px; 
             display: flex; 
             justify-content: space-between; 
-            align-items: center;
+            align-items: flex-end;
             z-index: 9999; 
             pointer-events: none; 
         }
 
         .floating-group {
             display: flex;
-            gap: 10px;
+            flex-direction: column; /* جعل الأيقونات فوق بعضها عمودياً */
+            gap: 12px;
             pointer-events: auto;
         }
 
         .btn-float { 
-            width: 52px; 
-            height: 52px; 
+            width: 62px; /* تم تكبير الحجم قليلاً */
+            height: 62px; 
             border-radius: 50%; 
             display: flex; 
             align-items: center; 
             justify-content: center; 
             color: white; 
-            font-size: 1.5rem; 
+            font-size: 1.8rem; /* تكبير حجم الأيقونة الداخلية */
             box-shadow: 0 4px 15px rgba(0,0,0,0.3); 
             transition: 0.3s; 
             text-decoration: none; 
@@ -103,8 +104,8 @@
             header h1 { font-size: 1.4rem; } 
             .section-btn { width: 100%; }
             .floating-top-logo img { width: 110px; height: 55px; }
-            .btn-float { width: 46px; height: 46px; font-size: 1.3rem; }
-            .floating-group { gap: 6px; }
+            .btn-float { width: 56px; height: 56px; font-size: 1.6rem; }
+            .floating-group { gap: 10px; }
         }
     </style>
 </head>
@@ -183,25 +184,25 @@
 
     </div>
 
-    <!-- الأزرار العائمة أسفل الشاشة -->
+    <!-- الأزرار العائمة أسفل الشاشة (واتساب فوق الاتصال لكل رقم) -->
     <div class="floating-container">
-        <!-- مجموعة أزرار الرقم المنتهي بـ 35 (على اليمين) -->
+        <!-- مجموعة أزرار الرقم المنتهي بـ 35 (على اليمين: واتساب فوق الاتصال) -->
         <div class="floating-group">
-            <a href="tel:0558900935" class="btn-float call" title="اتصل بالرقم 0558900935">
-                <i class="fa-solid fa-phone"></i>
-            </a>
             <a href="https://wa.me/966558900935" class="btn-float whatsapp" target="_blank" title="واتساب 0558900935">
                 <i class="fa-brands fa-whatsapp"></i>
             </a>
-        </div>
-
-        <!-- مجموعة أزرار الرقم المنتهي بـ 60 (على اليسار) -->
-        <div class="floating-group">
-            <a href="tel:0532608760" class="btn-float call" title="اتصل بالرقم 0532608760">
+            <a href="tel:0558900935" class="btn-float call" title="اتصل بالرقم 0558900935">
                 <i class="fa-solid fa-phone"></i>
             </a>
+        </div>
+
+        <!-- مجموعة أزرار الرقم المنتهي بـ 60 (على اليسار: واتساب فوق الاتصال) -->
+        <div class="floating-group">
             <a href="https://wa.me/966532608760" class="btn-float whatsapp" target="_blank" title="واتساب 0532608760">
                 <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="tel:0532608760" class="btn-float call" title="اتصل بالرقم 0532608760">
+                <i class="fa-solid fa-phone"></i>
             </a>
         </div>
     </div>
