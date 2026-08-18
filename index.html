@@ -32,7 +32,7 @@
         .section-btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; background-color: var(--call); color: white; padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 0.95rem; transition: 0.3s; }
         .section-btn:hover { opacity: 0.9; transform: translateY(-2px); }
 
-        /* تصميم الشعار العائم بحجم أكبر وأبرز */
+        /* تصميم الشعار العائم بشكل مستطيل واضح لعرض النص بدقة */
         .floating-top-logo {
             position: fixed;
             top: 10px;
@@ -45,19 +45,20 @@
         }
 
         .floating-top-logo img {
-            width: 85px; /* تم التكبير إلى 85 بكسل */
-            height: 85px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid #ffffff;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+            width: 140px; /* عرض المستطيل */
+            height: 70px; /* ارتفاع المستطيل */
+            border-radius: 10px; /* حواف منسقة وأنيقة */
+            object-fit: contain; /* لضمان ظهور الشعار كاملاً دون قص النص داخله */
+            border: 2px solid #ffffff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             background-color: #ffffff;
+            padding: 4px;
         }
 
         .floating-top-logo:hover img {
-            transform: scale(1.1);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
         }
 
         /* الأزرار العائمة أسفل الشاشة */
@@ -96,13 +97,13 @@
             header h1 { font-size: 1.4rem; } 
             .section-btn { width: 100%; }
             .floating-container { justify-content: space-around; gap: 0; }
-            .floating-top-logo img { width: 75px; height: 75px; } /* حجم كبير ومناسب للجوالات */
+            .floating-top-logo img { width: 110px; height: 55px; } /* حجم مستطيل متناسق مع شاشات الجوالات الصغيرة */
         }
     </style>
 </head>
 <body>
 
-    <!-- الشعار العائم البارز في أعلى الصفحة -->
+    <!-- الشعار العائم المستطيل في أعلى الصفحة -->
     <a href="#" class="floating-top-logo" title="شعار المكتب">
         <img src="IMG-20260817-WA0026.jpg" alt="شعار المكتب العائم">
     </a>
@@ -122,7 +123,7 @@
         <div class="section-card">
             <h2>📋 خدمات استقدام العمالة المنزلية الشاملة</h2>
             <img src="cv2.jpg" alt="خدمات الاستقدام الفوري" class="section-img">
-            <p>نحرص في مكتبنا المعتمد بالرياض ومدينة جدة على تقديم أفضل خدمات استقدام العمالة المنزلية وفق أعلى معايير الجودة والسرعة. نساعدكم في اختيار العمالة المناسبة من مختلف الجنسيات المتاحة، مع التركيز الكامل على توفير كفاءات مدربة تمتلك الخبرة والمهارة العالية في إدارة الشؤون المنزلية. نوفر لكم استشارات متكاملة لااختيار السير الذاتية التي تتوافق مع متطلبات أسرتكم، مع الالتزام التام بكافة الإجراءات والنظم القانونية الصادرة من وزارة الموارد البشرية لضمان إنهاء المعاملات بسهولة ويسر وبأسرع وقت ممكن.</p>
+            <p>نحرص في مكتبنا المعتمد بالرياض ومدينة جدة على تقديم أفضل خدمات استقدام العمالة المنزلية وفق أعلى معايير الجودة والسرعة. نساعدكم في اختيار العمالة المناسبة من مختلف الجنسيات المتاحة، مع التركيز الكامل على توفير كفاءات مدربة تمتلك الخبرة والمهارة العالية في إدارة الشؤون المنزلية. نوفر لكم استشارات متكاملة لاختيار السير الذاتية التي تتوافق مع متطلبات أسرتكم، مع الالتزام التام بكافة الإجراءات والنظم القانونية الصادرة من وزارة الموارد البشرية لضمان إنهاء المعاملات بسهولة ويسر وبأسرع وقت ممكن.</p>
             <div class="section-btn-group">
                 <a href="tel:0532608760" class="section-btn"><i class="fa-solid fa-phone"></i> اتصل: 0532608760</a>
                 <a href="tel:0558900935" class="section-btn"><i class="fa-solid fa-phone"></i> اتصل: 0558900935</a>
