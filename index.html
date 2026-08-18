@@ -32,6 +32,34 @@
         .section-btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; background-color: var(--call); color: white; padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 0.95rem; transition: 0.3s; }
         .section-btn:hover { opacity: 0.9; transform: translateY(-2px); }
 
+        /* الشعار العائم المضاف في الأعلى */
+        .floating-top-logo {
+            position: fixed;
+            top: 15px;
+            right: 15px;
+            z-index: 10000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        .floating-top-logo img {
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #ffffff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background-color: #ffffff;
+        }
+
+        .floating-top-logo:hover img {
+            transform: scale(1.08);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+        }
+
         /* الأزرار العائمة أسفل الشاشة */
         .floating-container { 
             position: fixed; 
@@ -68,10 +96,16 @@
             header h1 { font-size: 1.4rem; } 
             .section-btn { width: 100%; }
             .floating-container { justify-content: space-around; gap: 0; }
+            .floating-top-logo img { width: 55px; height: 55px; }
         }
     </style>
 </head>
 <body>
+
+    <!-- الشعار العائم في أعلى الصفحة -->
+    <a href="#" class="floating-top-logo" title="شعار المكتب">
+        <img src="IMG-20260817-WA0026.jpg" alt="شعار المكتب العائم">
+    </a>
 
     <div class="top-call-bar">📞 اتصل بنا: <a href="tel:0532608760">0532608760</a> | <a href="tel:0558900935">0558900935</a></div>
 
@@ -159,4 +193,3 @@
 
 </body>
 </html>
-
